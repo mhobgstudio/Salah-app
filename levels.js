@@ -43,9 +43,16 @@ const levels = [{
                 spiritual: "Each step represents purifying an organ of the body from misuse."
             }
         }],
+        practice: `<h3>Wudu Practice Checklist</h3><p>Perform Wudu following these steps in order. Check each one off mentally as you go:</p><ol><li><strong>Niyyah (Intention):</strong> Say "Bismillah" and set your intention to purify yourself for the sake of Allah.</li><li><strong>Wash Hands:</strong> Wash both hands up to the wrists 3 times, ensuring water reaches between the fingers.</li><li><strong>Rinse Mouth:</strong> Take water with the right hand and rinse mouth thoroughly, 3 times.</li><li><strong>Sniff Water:</strong> Sniff water into nostrils and blow out gently, 3 times.</li><li><strong>Wash Face:</strong> Wash from hairline to chin and ear to ear, 3 times.</li><li><strong>Wash Right Arm:</strong> From fingertips to elbow, 3 times.</li><li><strong>Wash Left Arm:</strong> From fingertips to elbow, 3 times.</li><li><strong>Wipe Head:</strong> Once — wet hands from forehead to back and return.</li><li><strong>Wipe Ears:</strong> Index fingers inside, thumbs outside, once.</li><li><strong>Wash Right Foot:</strong> Up to ankle including between toes, 3 times.</li><li><strong>Wash Left Foot:</strong> Up to ankle including between toes, 3 times.</li></ol><p><strong>Dua after Wudu:</strong> "Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh."</p>`,
         quiz: [
             { question: "What is the primary purpose of Niyyah?", options: ["Showing off", "Setting spiritual focus", "Just a habit", "To tell others"], correct: 1 },
-            { question: "Is Wudu required for every prayer?", options: ["Only on Fridays", "Yes, unless you already have it", "No", "Only for Fajr"], correct: 1 }
+            { question: "Is Wudu required for every prayer?", options: ["Only on Fridays", "Yes, unless you already have it", "No", "Only for Fajr"], correct: 1 },
+            { question: "What do you say before starting Wudu?", options: ["Allahu Akbar", "Bismillah", "Subhanallah", "Alhamdulillah"], correct: 1 },
+            { question: "How many times do you wash each hand?", options: ["Once", "Twice", "Three times", "Four times"], correct: 2 },
+            { question: "Which arm do you wash first?", options: ["Left", "Right", "Both together", "Either"], correct: 1 },
+            { question: "How many times do you wipe the head?", options: ["Three times", "Twice", "Once", "Four times"], correct: 2 },
+            { question: "What is the correct order after washing the face?", options: ["Feet, then arms", "Head, then ears", "Arms, then head", "Ears, then arms"], correct: 2 },
+            { question: "What breaks your Wudu?", options: ["Drinking water", "Sleeping deeply", "Eating food", "Walking"], correct: 1 }
         ]
     }]
 }, {
@@ -205,11 +212,18 @@ const levels = [{
                 explanation: { summary: "Turn head to the right, then to the left. This exits the prayer." }
             }]
         }],
+        practice: `<h3>2-Rak'ah Prayer Practice (Fajr Style)</h3><p>Pray a complete 2-Rak'ah prayer following this sequence:</p><ol><li><strong>Stand facing Qiblah.</strong> Make intention for Fajr (or any 2-rak'ah prayer).</li><li><strong>Takbirat al-Ihram:</strong> Raise hands and say "Allahu Akbar".</li><li><strong>Rak'ah 1:</strong><ul><li>Recite Al-Fatiha (all 7 verses) ending with "Aameen".</li><li>Recite Surah Al-Ikhlas (4 verses).</li><li>Say "Allahu Akbar" and go into Ruku — say "Subhaana Rabbiyal-'Adheem" 3 times.</li><li>Rise saying "Sami'Allahu liman hamidah. Rabbana wa lakal-hamd."</li><li>Go into Sujud — say "Subhaana Rabbiyal-A'laa" 3 times.</li><li>Sit briefly (Jalsa) — say "Rabbighfir lee" twice.</li><li>Second Sujud — say "Subhaana Rabbiyal-A'laa" 3 times.</li></ul></li><li><strong>Rak'ah 2:</strong><ul><li>Rise and recite Al-Fatiha again.</li><li>Recite Surah Al-Falaq (5 verses).</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud (same as Rak'ah 1).</li></ul></li><li><strong>Final Tashahhud:</strong> Sit and recite full Tashahhud + Salawat Ibrahimiyyah.</li><li><strong>Tasleem:</strong> Turn right saying "As-salaamu 'alaykum wa rahmatullaah", then left.</li></ol><h4>Prayers that use this 2-Rak'ah format:</h4><ul><li>Fajr (Obligatory dawn prayer)</li><li>Jumu'ah (Friday congregational)</li><li>Sunnah Rawatib (before/after obligatory prayers)</li><li>Salat al-Istikharah (guidance prayer)</li><li>Tahiyyat al-Masjid (greeting the mosque)</li><li>Eid prayers (with extra Takbirs — see Level 5)</li></ul>`,
         quiz: [
             { question: "How many verses are in Al-Fatiha?", options: ["5", "6", "7", "8"], correct: 2 },
             { question: "Which of these is a 2-Rak'ah prayer?", options: ["Dhuhr", "Asr", "Fajr", "Isha"], correct: 2 },
             { question: "What surah equals one-third of the Quran?", options: ["Al-Falaq", "Al-Nas", "Al-Ikhlas", "Al-Kawthar"], correct: 2 },
-            { question: "Name another 2-Rak'ah prayer besides Fajr.", options: ["Dhuhr", "Jumu'ah", "Maghrib", "Asr"], correct: 1 }
+            { question: "Name another 2-Rak'ah prayer besides Fajr.", options: ["Dhuhr", "Jumu'ah", "Maghrib", "Asr"], correct: 1 },
+            { question: "What do you say in Ruku?", options: ["Subhaana Rabbiyal-A'laa", "Subhaana Rabbiyal-'Adheem", "Allahu Akbar", "Rabbighfir lee"], correct: 1 },
+            { question: "What do you say in Sujud?", options: ["Subhaana Rabbiyal-'Adheem", "Sami'Allahu liman hamidah", "Subhaana Rabbiyal-A'laa", "Allahu Akbar"], correct: 2 },
+            { question: "How many points of contact in Sujud?", options: ["5", "6", "7", "8"], correct: 2 },
+            { question: "What do you say when rising from Ruku?", options: ["Allahu Akbar", "Bismillah", "Sami'Allahu liman hamidah", "Subhanallah"], correct: 2 },
+            { question: "Which surah is recited in Rak'ah 2 of this level?", options: ["Al-Ikhlas", "Al-Falaq", "An-Nas", "Al-Kawthar"], correct: 1 },
+            { question: "What is Tahiyyat al-Masjid?", options: ["Funeral prayer", "Eid prayer", "Greeting the mosque prayer", "Night prayer"], correct: 2 }
         ]
     }]
 }, {
@@ -299,10 +313,17 @@ const levels = [{
                 explanation: { summary: "In the final sitting: recite full Tashahhud, then add the Salawat Ibrahimiyyah, then end with Tasleem to both sides." }
             }]
         }],
+        practice: `<h3>3-Rak'ah Maghrib Practice</h3><p>Perform the complete Maghrib prayer step by step:</p><ol><li><strong>Takbirat al-Ihram:</strong> "Allahu Akbar" — raise hands.</li><li><strong>Rak'ah 1 (ALOUD):</strong><ul><li>Al-Fatiha (all 7 verses) + "Aameen"</li><li>Surah An-Nas (6 verses)</li><li>Ruku → "Subhaana Rabbiyal-'Adheem" ×3</li><li>Rise → "Sami'Allahu liman hamidah"</li><li>Sujud → "Subhaana Rabbiyal-A'laa" ×3</li><li>Jalsa → "Rabbighfir lee" ×2</li><li>Sujud again</li></ul></li><li><strong>Rak'ah 2 (ALOUD):</strong><ul><li>Al-Fatiha + Surah Al-Kawthar (3 verses)</li><li>Same Ruku-Sujud sequence</li></ul></li><li><strong>First Tashahhud (Middle Sitting):</strong><ul><li>Recite Tashahhud up to the Shahada ONLY</li><li>Do NOT add Salawat Ibrahimiyyah here</li><li>Rise for the 3rd rak'ah with "Allahu Akbar"</li></ul></li><li><strong>Rak'ah 3 (SILENT):</strong><ul><li>Al-Fatiha ONLY — no additional surah</li><li>Recite silently (move lips, no voice)</li><li>Same Ruku-Sujud sequence</li></ul></li><li><strong>Final Tashahhud + Salawat + Tasleem:</strong><ul><li>Full Tashahhud + Salawat Ibrahimiyyah</li><li>Personal dua, then Tasleem to both sides</li></ul></li></ol><h4>Key Distinction:</h4><p>Maghrib is the ONLY obligatory prayer with 3 rak'ahs. The Witr prayer (voluntary night prayer) can also be 3 rak'ahs.</p>`,
         quiz: [
             { question: "How many rak'ahs is Maghrib?", options: ["2", "3", "4", "5"], correct: 1 },
             { question: "Are the first two rak'ahs of Maghrib loud or silent?", options: ["Silent", "Loud", "First loud, second silent", "Depends"], correct: 1 },
-            { question: "What do you recite in the 3rd rak'ah of Maghrib?", options: ["Fatiha + Surah", "Only Fatiha", "Only a Surah", "Nothing"], correct: 1 }
+            { question: "What do you recite in the 3rd rak'ah of Maghrib?", options: ["Fatiha + Surah", "Only Fatiha", "Only a Surah", "Nothing"], correct: 1 },
+            { question: "Do you add Salawat to the First Tashahhud?", options: ["Yes, always", "No, only Tashahhud up to Shahada", "Only in Maghrib", "Only on Fridays"], correct: 1 },
+            { question: "How many verses are in Surah An-Nas?", options: ["4", "5", "6", "7"], correct: 2 },
+            { question: "How many verses are in Surah Al-Kawthar?", options: ["2", "3", "4", "5"], correct: 1 },
+            { question: "What is 'Jahr' recitation?", options: ["Silent", "Aloud", "Whisper", "In your head"], correct: 1 },
+            { question: "Is the 3rd rak'ah of Maghrib silent or loud?", options: ["Loud", "Silent", "Either", "Depends on imam"], correct: 1 },
+            { question: "Which other prayer can also be 3 rak'ahs?", options: ["Dhuhr", "Witr", "Fajr", "Isha"], correct: 1 }
         ]
     }]
 }, {
@@ -390,11 +411,18 @@ const levels = [{
                 explanation: { summary: "Recite the full Tashahhud, add Salawat Ibrahimiyyah, make personal dua, then say Tasleem to both sides." }
             }]
         }],
+        practice: `<h3>4-Rak'ah Prayer Practice (Dhuhr/Asr/Isha)</h3><p>Complete a full 4-rak'ah prayer:</p><ol><li><strong>Takbirat al-Ihram + Rak'ah 1:</strong><ul><li>Al-Fatiha + Surah Al-Asr (3 verses)</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Rak'ah 2:</strong><ul><li>Al-Fatiha + Surah Al-Fil (5 verses)</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>First Tashahhud (Middle Sitting):</strong><ul><li>Tashahhud up to Shahada only — NO Salawat</li><li>Rise with Takbir for Rak'ah 3</li></ul></li><li><strong>Rak'ah 3:</strong><ul><li>Al-Fatiha ONLY — no surah, recited silently</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Rak'ah 4:</strong><ul><li>Al-Fatiha ONLY — no surah, recited silently</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Final Tashahhud + Salawat + Tasleem</strong></li></ol><h4>Recitation Rules by Prayer:</h4><table style='width:100%; border-collapse:collapse; margin-top:10px;'><tr style='background:rgba(6,78,59,0.1);'><th style='padding:8px; text-align:left;'>Prayer</th><th style='padding:8px;'>Rak'ahs 1-2</th><th style='padding:8px;'>Rak'ahs 3-4</th></tr><tr><td style='padding:8px;'>Dhuhr</td><td style='padding:8px;'>Silent</td><td style='padding:8px;'>Silent</td></tr><tr><td style='padding:8px;'>Asr</td><td style='padding:8px;'>Silent</td><td style='padding:8px;'>Silent</td></tr><tr><td style='padding:8px;'>Isha</td><td style='padding:8px;'>ALOUD</td><td style='padding:8px;'>Silent</td></tr></table>`,
         quiz: [
             { question: "Which prayers are 4 Rak'ahs?", options: ["Fajr, Maghrib, Witr", "Dhuhr, Asr, Isha", "Only Dhuhr", "All five"], correct: 1 },
             { question: "Is Dhuhr recited aloud or silently?", options: ["Aloud", "Silently", "First rak'ah aloud", "Alternating"], correct: 1 },
             { question: "Do Rak'ahs 3 & 4 have an additional surah?", options: ["Yes", "No, only Fatiha", "Only in Isha", "Only in Dhuhr"], correct: 1 },
-            { question: "Which rak'ahs of Isha are recited aloud?", options: ["All 4", "First 2 only", "Last 2 only", "None"], correct: 1 }
+            { question: "Which rak'ahs of Isha are recited aloud?", options: ["All 4", "First 2 only", "Last 2 only", "None"], correct: 1 },
+            { question: "What is the translation of 'Wal-'Asr'?", options: ["By the night", "By time", "By the morning", "By the star"], correct: 1 },
+            { question: "How many verses are in Surah Al-Fil?", options: ["3", "4", "5", "6"], correct: 2 },
+            { question: "What is Surah Al-Asr about?", options: ["The elephant army", "Mankind being in loss except believers", "The morning light", "Allah's oneness"], correct: 1 },
+            { question: "When do you add Salawat to the Tashahhud?", options: ["After every Tashahhud", "Only in the FINAL Tashahhud", "Never", "Only in Fajr"], correct: 1 },
+            { question: "How is Asr different from Isha in recitation?", options: ["Asr is all silent; Isha first 2 are aloud", "They are the same", "Asr is aloud", "Isha is all silent"], correct: 0 },
+            { question: "What do you do after the First Tashahhud in a 4-rak'ah prayer?", options: ["Say Tasleem", "Rise for the 3rd rak'ah", "Add Salawat", "Make dua"], correct: 1 }
         ]
     }]
 }, {
@@ -457,9 +485,16 @@ const levels = [{
                 }
             }]
         }],
+        practice: `<h3>Eid Prayer Practice</h3><p>Walk through the unique Eid sequence:</p><ol><li><strong>Opening Takbir:</strong> "Allahu Akbar" — this starts the prayer.</li><li><strong>7 Extra Takbirs:</strong> Say "Allahu Akbar" 7 more times, raising hands to ears each time. Pause between each one.</li><li><strong>Rak'ah 1:</strong><ul><li>Al-Fatiha (aloud)</li><li>Surah Al-A'la (aloud)</li><li>Regular Ruku → Sujud → Jalsa → Sujud sequence</li></ul></li><li><strong>Rise for Rak'ah 2 with Takbir.</strong></li><li><strong>5 Extra Takbirs:</strong> Say "Allahu Akbar" 5 more times with raised hands before Fatiha.</li><li><strong>Rak'ah 2:</strong><ul><li>Al-Fatiha (aloud)</li><li>Surah Al-Ghashiyah (aloud)</li><li>Regular Ruku → Sujud → Jalsa → Sujud sequence</li></ul></li><li><strong>Final Tashahhud + Salawat + Tasleem.</strong></li></ol><h4>Eid Prayer Types:</h4><ul><li><strong>Eid al-Fitr:</strong> After Ramadan. Given Zakat al-Fitr before the prayer.</li><li><strong>Eid al-Adha:</strong> Festival of Sacrifice. The Udhiyah (animal sacrifice) follows.</li></ul><p><strong>Note:</strong> Eid prayer has NO adhan and NO iqamah. It is followed by a khutbah (sermon).</p>`,
         quiz: [
             { question: "How many extra Takbirs in Rak'ah 1 of Eid?", options: ["3", "5", "7", "9"], correct: 2 },
-            { question: "How many extra Takbirs in Rak'ah 2 of Eid?", options: ["3", "5", "7", "9"], correct: 1 }
+            { question: "How many extra Takbirs in Rak'ah 2 of Eid?", options: ["3", "5", "7", "9"], correct: 1 },
+            { question: "When are the extra Takbirs said?", options: ["After Fatiha", "Before Fatiha", "After Ruku", "During Sujud"], correct: 1 },
+            { question: "Is there an Adhan for Eid prayer?", options: ["Yes", "No"], correct: 1 },
+            { question: "How many rak'ahs is the Eid prayer?", options: ["1", "2", "3", "4"], correct: 1 },
+            { question: "What comes AFTER the Eid prayer?", options: ["Another prayer", "A khutbah (sermon)", "Fasting", "Nothing"], correct: 1 },
+            { question: "Which surah did the Prophet ﷺ recite in Eid?", options: ["Al-Ikhlas", "Al-A'la and Al-Ghashiyah", "Al-Falaq", "Yasin"], correct: 1 },
+            { question: "What is Eid al-Fitr celebrating?", options: ["Hajj", "End of Ramadan", "Prophet's birthday", "New Year"], correct: 1 }
         ]
     }]
 }, {
@@ -510,10 +545,16 @@ const levels = [{
                 explanation: { summary: "After the 4th Takbir, pause briefly, then give a single Tasleem to the right (or both sides)." }
             }]
         }],
+        practice: `<h3>Janazah Prayer Practice</h3><p>The Janazah is entirely performed standing. No bowing, no prostration.</p><ol><li><strong>Takbir 1:</strong> Say "Allahu Akbar" with raised hands → Recite Al-Fatiha silently.</li><li><strong>Takbir 2:</strong> Say "Allahu Akbar" (hands may or may not be raised) → Recite Salawat Ibrahimiyyah.</li><li><strong>Takbir 3:</strong> Say "Allahu Akbar" → Recite the Dua for the deceased:<br><em>"Allahummagh-fir lahu warhamhu wa 'aafihi wa'fu 'anhu wa akrim nuzulahu wa wassi' mudkhalahu waghsilhu bil-maa'i wath-thalji wal-barad."</em><br>(O Allah, forgive him, have mercy on him, grant him wellbeing, pardon him, honor his reception, widen his entrance, and wash him with water, snow, and hail.)</li><li><strong>Takbir 4:</strong> Say "Allahu Akbar" → Pause briefly in silence.</li><li><strong>Tasleem:</strong> Say "As-salaamu 'alaykum wa rahmatullaah" — one Tasleem to the right (some scholars say both sides).</li></ol><h4>Key Rules:</h4><ul><li>It is a <strong>Fard Kifayah</strong> — if enough people perform it, the obligation is lifted from the rest.</li><li>The body of the deceased should be in front of the imam.</li><li>For a male deceased, the imam stands at the chest level; for a female, at the middle.</li><li>There is NO adhan, iqamah, ruku, or sujud.</li></ul>`,
         quiz: [
             { question: "Does Janazah prayer have Ruku or Sujud?", options: ["Yes", "No — standing only"], correct: 1 },
             { question: "What is recited after the 2nd Takbir?", options: ["Al-Fatiha", "Salawat Ibrahimiyyah", "Dua for deceased", "Tasleem"], correct: 1 },
-            { question: "Is Janazah Fard 'Ayn or Fard Kifayah?", options: ["Fard 'Ayn (on everyone)", "Fard Kifayah (communal)"], correct: 1 }
+            { question: "Is Janazah Fard 'Ayn or Fard Kifayah?", options: ["Fard 'Ayn (on everyone)", "Fard Kifayah (communal)"], correct: 1 },
+            { question: "How many Takbirs are in the Janazah prayer?", options: ["2", "3", "4", "5"], correct: 2 },
+            { question: "What is recited after the 1st Takbir?", options: ["Dua for deceased", "Salawat", "Al-Fatiha", "Nothing"], correct: 2 },
+            { question: "What is the main Dua in Janazah asking for?", options: ["Money", "Forgiveness and mercy for the deceased", "Long life", "Knowledge"], correct: 1 },
+            { question: "What does 'Fard Kifayah' mean?", options: ["Everyone must do it", "If enough people do it, it's fulfilled for all", "Only the imam does it", "It's optional"], correct: 1 },
+            { question: "Is there an Adhan for Janazah?", options: ["Yes", "No"], correct: 1 }
         ]
     }]
 }, {
@@ -602,9 +643,18 @@ const levels = [{
                 explanation: { summary: "Exiting the prayer with a heart full of light.", significance: "Returning from the audience with Allah to serve His creation." }
             }]
         }],
+        practice: `<h3>Ihsan Mastery Practice</h3><p>This is not a new prayer — it is perfecting everything you've learned. Pray any 4-rak'ah prayer with the following Ihsan checklist:</p><ol><li><strong>Before Prayer:</strong><ul><li>Perform Wudu slowly and mindfully. Feel each drop of water.</li><li>Choose a clean, quiet space. Remove distractions.</li><li>Stand facing Qiblah. Take 3 deep breaths before beginning.</li></ul></li><li><strong>During Takbir:</strong> Close your eyes briefly. Imagine the entire world melting away behind you.</li><li><strong>During Qiyam:</strong><ul><li>Recite Al-Fatiha ONE verse at a time. Pause 2-3 seconds between each verse.</li><li>Recite Surah Ad-Duha — feel the warmth of Allah's reassurance.</li><li>Think about the MEANING, not just the words.</li></ul></li><li><strong>During Ruku:</strong> Hold longer than usual. Say "Subhaana Rabbiyal-'Adheem" at least 5 times. Feel your ego bowing.</li><li><strong>During Sujud:</strong><ul><li>Stay longer. Say "Subhaana Rabbiyal-A'laa" at least 7 times.</li><li>Make personal dua in your own language. Pour your heart out.</li><li>This is the closest you will ever be to Allah.</li></ul></li><li><strong>During Tasleem:</strong> Feel gratitude. You just had a private audience with the Creator of the universe.</li></ol><h4>The Prophet ﷺ said:</h4><p><em>"Pray as you have seen me praying."</em> (Bukhari)</p><p><em>"Ihsan is to worship Allah as if you see Him, and if you cannot see Him, know that He sees you."</em> (Muslim)</p>`,
         quiz: [
             { question: "What is 'Ihsan' in worship?", options: ["Praying fast", "Worshipping as if you see Allah", "Moving a lot", "Talking during prayer"], correct: 1 },
-            { question: "Which surah begins with 'By the morning brightness'?", options: ["Al-Ikhlas", "Al-Fatiha", "Ad-Duha", "Al-Asr"], correct: 2 }
+            { question: "Which surah begins with 'By the morning brightness'?", options: ["Al-Ikhlas", "Al-Fatiha", "Ad-Duha", "Al-Asr"], correct: 2 },
+            { question: "What is 'Khushu'?", options: ["Speed", "Deep humility and focus in prayer", "Loudness", "Movement"], correct: 1 },
+            { question: "When are you closest to Allah?", options: ["Standing", "Ruku", "Sujud", "Tasleem"], correct: 2 },
+            { question: "What are 'Makharij'?", options: ["Prayer positions", "Articulation points for Arabic letters", "Types of prayer", "Wudu steps"], correct: 1 },
+            { question: "Complete: 'Your Lord has not taken leave of you...' — which surah?", options: ["Al-Fatiha", "Ad-Duha (93:3)", "Al-Ikhlas", "Al-Falaq"], correct: 1 },
+            { question: "What did the Prophet ﷺ say about prayer?", options: ["Pray quickly", "Pray as you have seen me praying", "Pray only when you feel like it", "Pray silently always"], correct: 1 },
+            { question: "How many verses are in Surah Ad-Duha?", options: ["5", "7", "9", "11"], correct: 3 },
+            { question: "What is the meaning of 'Wa wajadaka daallan fahadaa'?", options: ["He found you rich", "He found you lost and guided you", "He made you sad", "He tested you"], correct: 1 },
+            { question: "What should you focus on during Ihsan prayer?", options: ["Speed of recitation", "The meaning of every word", "How others see you", "Finishing quickly"], correct: 1 }
         ]
     }]
 }];
