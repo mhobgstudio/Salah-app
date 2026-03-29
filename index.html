@@ -445,20 +445,35 @@
                     break;
                     
                 case 'demonstration':
-                    content.innerHTML = lesson.postures.map((p, i) => `
-                        <div class="posture-section" style="display: ${i === demoState.currentPostureIndex ? 'block' : 'none'}">
-                            <h3 style="margin-bottom:15px;">${p.name}</h3>
-                            <div style="text-align:center;">${postureImages[p.image] || 'Animation placeholder'}</div>
-                            ${p.recitations?.map(r => `
-                                <div class="verse-card">
-                                    <div class="arabic-text">${r.arabic || ''}</div>
-                                    <div class="transliteration">${r.transliteration || ''}</div>
-                                    <div class="translation">${r.translation || ''}</div>
-                                    ${r.explanation ? `<div class="explanation-components">${getExplanationHTML(r.explanation)}</div>` : ''}
+                    content.innerHTML = `
+                        <h2 style="margin-bottom:10px;">Full Prayer Walkthrough</h2>
+                        <p style="color:#6b7280; margin-bottom:30px;">Review every step below before proceeding to Practice.</p>
+                        ${lesson.postures.map((p, i) => `
+                            <div class="posture-section" style="margin-bottom:40px; padding-bottom:30px; border-bottom:2px solid rgba(6,78,59,0.1);">
+                                <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
+                                    <span style="background:var(--accent-gold); color:white; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">${i+1}</span>
+                                    <h3 style="font-size:1.4rem; color:var(--primary-emerald);">${p.name}</h3>
                                 </div>
-                            `).join('')}
-                        </div>
-                    `).join('');
+                                <div style="text-align:center; margin-bottom:20px;">${postureImages[p.image] || ''}</div>
+                                ${(p.recitations || []).map(r => `
+                                    <div class="verse-card">
+                                        <div class="arabic-text">${r.arabic || ''}</div>
+                                        ${r.transliteration ? `<div class="transliteration">${r.transliteration}</div>` : ''}
+                                        ${r.translation ? `<div class="translation">${r.translation}</div>` : ''}
+                                        ${r.explanation ? `<div class="explanation-components">${getExplanationHTML(r.explanation)}</div>` : ''}
+                                    </div>
+                                `).join('')}
+                                ${p.practice_tips ? `
+                                    <div style="background:rgba(217,119,6,0.06); border-left:4px solid var(--accent-gold); padding:20px; border-radius:0 15px 15px 0; margin-top:15px;">
+                                        <h4 style="color:var(--accent-gold); margin-bottom:10px;">💡 Practice Tips</h4>
+                                        ${Object.entries(p.practice_tips).map(([key, val]) => `
+                                            <p style="margin-bottom:8px;"><strong>${key.replace(/_/g,' ').replace(/\b\w/g,l=>l.toUpperCase())}:</strong> ${val}</p>
+                                        `).join('')}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    `;
                     break;
 
                 case 'practice':
@@ -553,8 +568,14 @@
                     </div>
                 `).join('');
             }
+            if(exp.steps) {
+                html += '<div style="margin-top:15px;"><strong>Steps:</strong><ol style="margin-left:20px;">' + exp.steps.map(s => `<li><strong>${s.description}:</strong> ${s.details}</li>`).join('') + '</ol></div>';
+            }
+            if(exp.recommended_practices) {
+                html += '<div style="margin-top:15px;"><strong>Recommended:</strong><ul style="margin-left:20px;">' + exp.recommended_practices.map(r => `<li>${r}</li>`).join('') + '</ul></div>';
+            }
             if(exp.spiritual_benefits) {
-                html += '<div style="margin-top:15px;"><strong>Spiritual Benefits:</strong><ul>' + exp.spiritual_benefits.map(b => `<li>${b}</li>`).join('') + '</ul></div>';
+                html += '<div style="margin-top:15px;"><strong>Spiritual Benefits:</strong><ul style="margin-left:20px;">' + exp.spiritual_benefits.map(b => `<li>${b}</li>`).join('') + '</ul></div>';
             }
             return html;
         }
