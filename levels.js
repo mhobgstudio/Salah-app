@@ -72,6 +72,16 @@ const levels = [{
         ],
         content: "The 2-Rak'ah prayer is the fundamental building block. It is used in Fajr (the obligatory dawn prayer), Jumu'ah (Friday congregational prayer), all Sunnah Rawatib (voluntary prayers before/after obligatory ones), Eid prayers, Salat al-Istikharah (guidance prayer), and Tahiyyat al-Masjid (greeting the mosque). Mastering this structure unlocks all other prayer forms.",
         postures: [{
+            name: "0. Wudu Refresher — Quick Sequence",
+            image: "wudu-steps",
+            recitations: [{
+                arabic: "بِسْمِ ٱللَّٰهِ",
+                transliteration: "Bismillah",
+                translation: "In the name of Allah",
+                explanation: { summary: "Before every prayer, ensure you have Wudu. Quick reminder: Hands → Mouth → Nose → Face → Arms → Head → Ears → Feet. Say Bismillah before starting." }
+            }],
+            practice_tips: { technical: "Ensure no dry spots remain. Water must touch every required area.", spiritual: "Each limb washed is a sin forgiven." }
+        }, {
             name: "1. Opening Takbir (Takbirat al-Ihram)",
             image: "takbir",
             recitations: [{
@@ -193,13 +203,18 @@ const levels = [{
                 }
             }]
         }, {
-            name: "10. Final Tashahhud + Salawat",
+            name: "10. Final Tashahhud",
             image: "tashahhud",
             recitations: [{
-                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ",
-                transliteration: "At-tahiyyaatu lillaahi was-salawaatu wat-tayyibaat",
-                translation: "All greetings, prayers, and pure words are for Allah.",
-                explanation: { summary: "Full Tashahhud + Salawat Ibrahimiyyah in the final sitting of a 2-rak'ah prayer." }
+                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+                transliteration: "At-tahiyyaatu lillaahi was-salawaatu wat-tayyibaat. As-salaamu 'alayka ayyuhan-nabiyyu wa rahmatullaahi wa barakaatuh. As-salaamu 'alaynaa wa 'alaa 'ibaadillaahis-saaliheen. Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh.",
+                translation: "All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and Messenger.",
+                explanation: { summary: "The complete Tashahhud recited in the final sitting of the prayer." }
+            }, {
+                arabic: "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+                transliteration: "Allahumma salli 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa sallayta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed. Allahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa baarakta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed.",
+                translation: "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim. You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. You are Praiseworthy, Glorious.",
+                explanation: { summary: "The Salawat Ibrahimiyyah — added ONLY in the final Tashahhud, after the Shahada." }
             }],
             practice_tips: { technical: "Point index finger forward, eyes on it. Sit on left foot.", spiritual: "You are speaking directly to the Prophet ﷺ across time." }
         }, {
@@ -243,6 +258,16 @@ const levels = [{
         ],
         content: "Maghrib is the only obligatory prayer with 3 Rak'ahs. The first two rak'ahs are recited ALOUD (Jahr) with Al-Fatiha + an additional surah. The third rak'ah is recited SILENTLY with only Al-Fatiha. After Rak'ah 2, you sit for the First Tashahhud before rising for the final rak'ah. The Witr prayer (odd-numbered night prayer) can also be 3 rak'ahs.",
         postures: [{
+            name: "0. Wudu Review — Washing Sequence with Sunnah Additions",
+            image: "wudu-steps",
+            recitations: [{
+                arabic: "بِسْمِ ٱللَّٰهِ",
+                transliteration: "Bismillah",
+                translation: "In the name of Allah",
+                explanation: { summary: "Ensure Wudu before Maghrib. Full sequence: Hands (3x) → Mouth (3x) → Nose (3x) → Face (3x) → Right Arm to elbow (3x) → Left Arm to elbow (3x) → Wipe Head (once, front to back and return) → Wipe Ears (once) → Right Foot to ankle (3x) → Left Foot to ankle (3x). Sunnah addition: Wash between toes with the little finger of the left hand." }
+            }],
+            practice_tips: { technical: "Start with the right side for arms and feet. Ensure water reaches between toes.", spiritual: "The Prophet ﷺ said: 'When a Muslim washes his face, every sin he looked at with his eyes comes off his face with the water.'" }
+        }, {
             name: "1. Rak'ah 1 — Fatiha + Surah An-Nas (Aloud)",
             image: "qiyaam",
             recitations: [{
@@ -304,13 +329,23 @@ const levels = [{
                 explanation: { summary: "In the 3rd rak'ah of Maghrib, recite ONLY Al-Fatiha, silently (moving lips without raising voice). No additional surah.", significance: "Inward focus deepens as the prayer nears its end." }
             }]
         }, {
-            name: "5. Final Tashahhud + Salawat + Tasleem",
-            image: "salaam",
+            name: "5. Final Tashahhud, Salawat Ibrahimiyyah, and Tasleem",
+            image: "tashahhud",
             recitations: [{
-                arabic: "ٱلتَّحِيَّاتُ + ٱلصَّلَاةُ ٱلْإِبْرَاهِيمِيَّةُ + ٱلسَّلَامُ",
-                transliteration: "At-Tahiyyaat + As-Salaat al-Ibrahimiyyah + As-Salaam",
-                translation: "Full Tashahhud + Abrahamic Prayer + Peace greeting",
-                explanation: { summary: "In the final sitting: recite full Tashahhud, then add the Salawat Ibrahimiyyah, then end with Tasleem to both sides." }
+                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+                transliteration: "At-tahiyyaatu lillaahi was-salawaatu wat-tayyibaat. As-salaamu 'alayka ayyuhan-nabiyyu wa rahmatullaahi wa barakaatuh. As-salaamu 'alaynaa wa 'alaa 'ibaadillaahis-saaliheen. Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh.",
+                translation: "All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and Messenger.",
+                explanation: { summary: "The complete Tashahhud — recited in the final sitting." }
+            }, {
+                arabic: "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+                transliteration: "Allahumma salli 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa sallayta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed. Allahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa baarakta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed.",
+                translation: "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim. You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. You are Praiseworthy, Glorious.",
+                explanation: { summary: "The Salawat Ibrahimiyyah — added after the Shahada in the final Tashahhud only." }
+            }, {
+                arabic: "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ",
+                transliteration: "As-salaamu 'alaykum wa rahmatullaah",
+                translation: "Peace and mercy of Allah be upon you",
+                explanation: { summary: "Turn head to the right, then to the left. This exits the prayer." }
             }]
         }],
         practice: `<h3>3-Rak'ah Maghrib Practice</h3><p>Perform the complete Maghrib prayer step by step:</p><ol><li><strong>Takbirat al-Ihram:</strong> "Allahu Akbar" — raise hands.</li><li><strong>Rak'ah 1 (ALOUD):</strong><ul><li>Al-Fatiha (all 7 verses) + "Aameen"</li><li>Surah An-Nas (6 verses)</li><li>Ruku → "Subhaana Rabbiyal-'Adheem" ×3</li><li>Rise → "Sami'Allahu liman hamidah"</li><li>Sujud → "Subhaana Rabbiyal-A'laa" ×3</li><li>Jalsa → "Rabbighfir lee" ×2</li><li>Sujud again</li></ul></li><li><strong>Rak'ah 2 (ALOUD):</strong><ul><li>Al-Fatiha + Surah Al-Kawthar (3 verses)</li><li>Same Ruku-Sujud sequence</li></ul></li><li><strong>First Tashahhud (Middle Sitting):</strong><ul><li>Recite Tashahhud up to the Shahada ONLY</li><li>Do NOT add Salawat Ibrahimiyyah here</li><li>Rise for the 3rd rak'ah with "Allahu Akbar"</li></ul></li><li><strong>Rak'ah 3 (SILENT):</strong><ul><li>Al-Fatiha ONLY — no additional surah</li><li>Recite silently (move lips, no voice)</li><li>Same Ruku-Sujud sequence</li></ul></li><li><strong>Final Tashahhud + Salawat + Tasleem:</strong><ul><li>Full Tashahhud + Salawat Ibrahimiyyah</li><li>Personal dua, then Tasleem to both sides</li></ul></li></ol><h4>Key Distinction:</h4><p>Maghrib is the ONLY obligatory prayer with 3 rak'ahs. The Witr prayer (voluntary night prayer) can also be 3 rak'ahs.</p>`,
@@ -343,6 +378,16 @@ const levels = [{
         ],
         content: "Three of the five daily prayers are 4 Rak'ahs: Dhuhr (noon), Asr (afternoon), and Isha (night). Dhuhr and Asr are recited entirely in silence. Isha's first 2 rak'ahs are aloud, while the last 2 are silent. In all cases, the additional surah is only recited after Al-Fatiha in the first 2 rak'ahs. Rak'ahs 3 and 4 contain only Al-Fatiha.",
         postures: [{
+            name: "0. Wudu — Detailed Sequence with Invalidators",
+            image: "wudu-steps",
+            recitations: [{
+                arabic: "بِسْمِ ٱللَّٰهِ",
+                transliteration: "Bismillah",
+                translation: "In the name of Allah",
+                explanation: { summary: "Complete Wudu sequence: (1) Say Bismillah. (2) Wash hands 3x. (3) Rinse mouth 3x. (4) Sniff water into nose and blow out 3x. (5) Wash face from hairline to chin, ear to ear, 3x. (6) Wash right arm fingertips to elbow 3x. (7) Wash left arm fingertips to elbow 3x. (8) Wipe head once front to back and return. (9) Wipe ears — index fingers inside, thumbs behind. (10) Wash right foot to ankle 3x including between toes. (11) Wash left foot to ankle 3x including between toes. Things that BREAK Wudu: using the bathroom, passing gas, deep sleep, vomiting, bleeding significantly. Dua after Wudu: Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh." }
+            }],
+            practice_tips: { technical: "Always start with the right side. Rub between fingers and toes. Don't waste water.", spiritual: "The Prophet ﷺ said: 'Whoever performs Wudu perfectly, his sins will depart from his body, even from beneath his nails.'" }
+        }, {
             name: "1. Rak'ah 1 — Fatiha + Surah Al-Asr",
             image: "qiyaam",
             recitations: [{
@@ -386,10 +431,10 @@ const levels = [{
             name: "3. First Tashahhud (After Rak'ah 2)",
             image: "tashahhud",
             recitations: [{
-                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ...",
-                transliteration: "At-Tahiyyaatu lillaahi...",
-                translation: "All greetings are for Allah...",
-                explanation: { summary: "After the 2nd rak'ah, sit and recite only the Tashahhud (no Salawat). Then rise for the 3rd rak'ah with Takbir.", significance: "A testimony of faith at the midpoint of prayer." }
+                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+                transliteration: "At-tahiyyaatu lillaahi was-salawaatu wat-tayyibaat. As-salaamu 'alayka ayyuhan-nabiyyu wa rahmatullaahi wa barakaatuh. As-salaamu 'alaynaa wa 'alaa 'ibaadillaahis-saaliheen. Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh.",
+                translation: "All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and Messenger.",
+                explanation: { summary: "After the 2nd rak'ah, sit and recite the Tashahhud up to the Shahada. Do NOT add Salawat Ibrahimiyyah here. Then rise for the 3rd rak'ah with Takbir.", significance: "A testimony of faith at the midpoint of prayer." }
             }],
             practice_tips: { technical: "Raise index finger during 'Ash-hadu'. Keep eyes on it.", spiritual: "Affirming your covenant with Allah mid-prayer." }
         }, {
@@ -402,13 +447,23 @@ const levels = [{
                 explanation: { summary: "The last two rak'ahs contain ONLY Al-Fatiha, recited silently. This applies to Dhuhr, Asr, and the last two of Isha.", significance: "Reducing external recitation to deepen inward presence." }
             }]
         }, {
-            name: "5. Final Tashahhud + Salawat + Tasleem",
-            image: "salaam",
+            name: "5. Final Tashahhud, Salawat Ibrahimiyyah, and Tasleem",
+            image: "tashahhud",
             recitations: [{
-                arabic: "ٱلتَّحِيَّاتُ + ٱلصَّلَاةُ ٱلْإِبْرَاهِيمِيَّةُ + ٱلسَّلَامُ",
-                transliteration: "At-Tahiyyaat + As-Salaat al-Ibrahimiyyah + As-Salaam",
-                translation: "Complete Tashahhud + Abrahamic Prayer + Tasleem",
-                explanation: { summary: "Recite the full Tashahhud, add Salawat Ibrahimiyyah, make personal dua, then say Tasleem to both sides." }
+                arabic: "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+                transliteration: "At-tahiyyaatu lillaahi was-salawaatu wat-tayyibaat. As-salaamu 'alayka ayyuhan-nabiyyu wa rahmatullaahi wa barakaatuh. As-salaamu 'alaynaa wa 'alaa 'ibaadillaahis-saaliheen. Ash-hadu an laa ilaaha illallaah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh.",
+                translation: "All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and Messenger.",
+                explanation: { summary: "The complete Tashahhud — recited in the final sitting of the prayer." }
+            }, {
+                arabic: "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+                transliteration: "Allahumma salli 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa sallayta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed. Allahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammadin, kamaa baarakta 'alaa Ibraheema wa 'alaa aali Ibraheema, innaka Hameedun Majeed.",
+                translation: "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim. You are Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. You are Praiseworthy, Glorious.",
+                explanation: { summary: "The Salawat Ibrahimiyyah — added after the Shahada in the final Tashahhud only." }
+            }, {
+                arabic: "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ",
+                transliteration: "As-salaamu 'alaykum wa rahmatullaah",
+                translation: "Peace and mercy of Allah be upon you",
+                explanation: { summary: "Turn head to the right, then to the left. This exits the prayer." }
             }]
         }],
         practice: `<h3>4-Rak'ah Prayer Practice (Dhuhr/Asr/Isha)</h3><p>Complete a full 4-rak'ah prayer:</p><ol><li><strong>Takbirat al-Ihram + Rak'ah 1:</strong><ul><li>Al-Fatiha + Surah Al-Asr (3 verses)</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Rak'ah 2:</strong><ul><li>Al-Fatiha + Surah Al-Fil (5 verses)</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>First Tashahhud (Middle Sitting):</strong><ul><li>Tashahhud up to Shahada only — NO Salawat</li><li>Rise with Takbir for Rak'ah 3</li></ul></li><li><strong>Rak'ah 3:</strong><ul><li>Al-Fatiha ONLY — no surah, recited silently</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Rak'ah 4:</strong><ul><li>Al-Fatiha ONLY — no surah, recited silently</li><li>Ruku → I'tidal → Sujud → Jalsa → Sujud</li></ul></li><li><strong>Final Tashahhud + Salawat + Tasleem</strong></li></ol><h4>Recitation Rules by Prayer:</h4><table style='width:100%; border-collapse:collapse; margin-top:10px;'><tr style='background:rgba(6,78,59,0.1);'><th style='padding:8px; text-align:left;'>Prayer</th><th style='padding:8px;'>Rak'ahs 1-2</th><th style='padding:8px;'>Rak'ahs 3-4</th></tr><tr><td style='padding:8px;'>Dhuhr</td><td style='padding:8px;'>Silent</td><td style='padding:8px;'>Silent</td></tr><tr><td style='padding:8px;'>Asr</td><td style='padding:8px;'>Silent</td><td style='padding:8px;'>Silent</td></tr><tr><td style='padding:8px;'>Isha</td><td style='padding:8px;'>ALOUD</td><td style='padding:8px;'>Silent</td></tr></table>`,
@@ -437,6 +492,16 @@ const levels = [{
         objectives: ["Perform the 7 extra Takbirs in Rak'ah 1", "Perform the 5 extra Takbirs in Rak'ah 2", "Learn Surah Al-A'la as the additional surah"],
         content: "Eid prayer is a special 2-Rak'ah prayer performed for Eid al-Fitr (after Ramadan) and Eid al-Adha (Festival of Sacrifice). It is unique because of the extra Takbirs: 7 in the first rak'ah (after the opening Takbir, before Fatiha) and 5 in the second rak'ah (after the standing Takbir, before Fatiha). It is prayed in congregation, aloud.",
         postures: [{
+            name: "0. Wudu — Full Sunnah Method with Dua",
+            image: "wudu-steps",
+            recitations: [{
+                arabic: "بِسْمِ ٱللَّٰهِ",
+                transliteration: "Bismillah",
+                translation: "In the name of Allah",
+                explanation: { summary: "Advanced Wudu for a special occasion: (1) Bismillah with full intention. (2) Wash hands 3x — ensure water between all fingers. (3) Rinse mouth with vigor (Madhmadhah) 3x. (4) Sniff water into both nostrils firmly (Istinshaq) and blow out (Istinthaar) 3x. (5) Wash face thoroughly from hairline to chin, ear to ear, 3x — include the beard if you have one by running wet fingers through it. (6) Right arm to elbow 3x, then left arm 3x — rub thoroughly. (7) Wipe head once: wet hands, pass from forehead to nape and back. (8) Wipe ears: insert index fingers, wipe behind with thumbs. (9) Right foot to ankle 3x, then left foot 3x — use left pinky finger between toes. Dua after: 'Ash-hadu an laa ilaaha illallaah wahdahu laa shareeka lah, wa ash-hadu anna Muhammadan 'abduhu wa rasooluh. Allahummaj'alnee minat-tawwaabeena waj'alnee minal-mutatohhireen.' (I bear witness there is no god but Allah alone, and Muhammad is His servant and Messenger. O Allah, make me of those who repent and make me of those who purify themselves.)" }
+            }],
+            practice_tips: { technical: "For Eid, perform Ghusl (full shower) if possible, which is Sunnah. Wear your best clothes.", spiritual: "Eid is a celebration of obedience. The purity of your body mirrors the purity of a month of fasting." }
+        }, {
             name: "1. Opening Takbir + 7 Extra Takbirs",
             image: "takbir",
             recitations: [{
@@ -509,6 +574,16 @@ const levels = [{
         objectives: ["Master the 4-Takbir standing-only sequence", "Learn the Dua for the deceased with transliteration", "Understand the communal obligation (Fard Kifayah)"],
         content: "Janazah is a unique prayer: no ruku, no sujud — only 4 Takbirs while standing. After Takbir 1: Al-Fatiha. After Takbir 2: Salawat Ibrahimiyyah. After Takbir 3: Dua for the deceased. After Takbir 4: Tasleem. It is a communal obligation (Fard Kifayah) — if enough people perform it, the obligation is lifted from the rest.",
         postures: [{
+            name: "0. Wudu — Complete Review with All Invalidators",
+            image: "wudu-steps",
+            recitations: [{
+                arabic: "بِسْمِ ٱللَّٰهِ",
+                transliteration: "Bismillah",
+                translation: "In the name of Allah",
+                explanation: { summary: "Even for Janazah, Wudu is required as it is a prayer. Complete sequence: (1) Bismillah. (2) Hands 3x. (3) Mouth 3x. (4) Nose (Istinshaq + Istinthaar) 3x. (5) Face 3x. (6) Right arm to elbow 3x. (7) Left arm to elbow 3x. (8) Wipe full head once (front to back, back to front). (9) Wipe ears once (index inside, thumbs behind). (10) Right foot to ankle 3x (between toes). (11) Left foot to ankle 3x (between toes). INVALIDATORS: (A) Anything exiting front/back passages. (B) Deep sleep (losing consciousness). (C) Touching private parts directly. (D) Eating camel meat (according to some scholars). (E) Vomiting a mouthful. (F) Loss of consciousness/sanity. If unsure whether Wudu is still valid, the principle is: certainty is not overridden by doubt — if you are sure you made Wudu and unsure you broke it, it is still valid." }
+            }],
+            practice_tips: { technical: "Wudu must be complete for Janazah. There is no tayammum substitute unless water is truly unavailable.", spiritual: "You are about to stand before Allah on behalf of the deceased. Ensure the utmost purity." }
+        }, {
             name: "1. Takbir 1 — Al-Fatiha (Silent)",
             image: "takbir",
             recitations: [{
