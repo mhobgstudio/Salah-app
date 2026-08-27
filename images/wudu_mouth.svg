@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <circle cx="100" cy="55" r="24" fill="url(#g)"/><ellipse cx="100" cy="42" rx="20" ry="9" fill="#065f46" opacity="0.7"/>
+  <rect x="93" y="77" width="14" height="12" rx="4" fill="url(#g)"/>
+  <path d="M78 89 Q76 140 78 195 L122 195 Q124 140 122 89 Z" fill="url(#g)"/>
+  <path d="M78 105 Q55 115 48 100 Q42 90 50 85" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <circle cx="48" cy="82" r="6" fill="#047857"/>
+  <circle cx="100" cy="62" r="3" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="97" cy="68" r="2" fill="#60a5fa" opacity="0.4"/>
+  <path d="M88 195 Q85 225 82 250 L92 250 Q94 225 97 195" fill="url(#g)"/>
+  <path d="M103 195 Q106 225 108 250 L118 250 Q116 225 113 195" fill="url(#g)"/>
+  <ellipse cx="87" cy="257" rx="8" ry="5" fill="#047857"/><ellipse cx="113" cy="257" rx="8" ry="5" fill="#047857"/>
+  <text x="100" y="288" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">3. Rinse Mouth (3×)</text>
+</svg>

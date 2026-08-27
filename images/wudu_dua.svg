@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <rect x="30" y="260" width="140" height="28" rx="4" fill="#d4af37" opacity="0.2"/>
+  <circle cx="100" cy="50" r="22" fill="url(#g)"/><ellipse cx="100" cy="38" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <rect x="93" y="70" width="14" height="12" rx="4" fill="url(#g)"/>
+  <path d="M78 82 Q76 130 78 185 L122 185 Q124 130 122 82 Z" fill="url(#g)"/>
+  <path d="M78 100 Q55 85 50 65 Q48 55 55 48" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M122 100 Q145 85 150 65 Q152 55 145 48" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <circle cx="55" cy="44" r="5" fill="#d4af37" opacity="0.6"/><circle cx="145" cy="44" r="5" fill="#d4af37" opacity="0.6"/>
+  <circle cx="100" cy="30" r="3" fill="#d4af37" opacity="0.4"/>
+  <path d="M88 185 Q85 215 82 245 L92 245 Q94 215 97 185" fill="url(#g)"/>
+  <path d="M103 185 Q106 215 108 245 L118 245 Q116 215 113 185" fill="url(#g)"/>
+  <ellipse cx="87" cy="252" rx="8" ry="5" fill="#047857"/><ellipse cx="113" cy="252" rx="8" ry="5" fill="#047857"/>
+  <text x="100" y="290" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">10. Dua After Wudu</text>
+</svg>

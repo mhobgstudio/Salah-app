@@ -1,146 +1,354 @@
 {
-  "takbir": {
-    "arabic": "ٱللَّٰهُ أَكْبَرُ",
-    "english": "Allahu Akbar",
-    "ar_audio": "audio/takbir_ar.mp3",
-    "en_audio": "audio/takbir_en.mp3"
+  "بِسْمِ ٱللَّٰهِ": {
+    "ar_audio": "audio/recite_001_b40d6d89_ar.mp3",
+    "index": 1
   },
-  "bismillah": {
-    "arabic": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-    "english": "Bismillahir Rahmanir Raheem",
-    "ar_audio": "audio/bismillah_ar.mp3",
-    "en_audio": "audio/bismillah_en.mp3"
+  "ٱللَّٰهُ أَكْبَرُ": {
+    "ar_audio": "audio/recite_002_fe9df479_ar.mp3",
+    "index": 2
   },
-  "alhamd": {
-    "arabic": "ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَٰلَمِينَ",
-    "english": "Alhamdu lillahi Rabbil Alameen",
-    "ar_audio": "audio/alhamd_ar.mp3",
-    "en_audio": "audio/alhamd_en.mp3"
+  "سُورَةُ ٱلْفَاتِحَةِ": {
+    "ar_audio": "audio/recite_003_4c3c80a8_ar.mp3",
+    "index": 3
   },
-  "ar-rahman": {
-    "arabic": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-    "english": "Ar-Rahmanir Raheem",
-    "ar_audio": "audio/ar-rahman_ar.mp3",
-    "en_audio": "audio/ar-rahman_en.mp3"
+  "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ": {
+    "ar_audio": "audio/recite_004_ee0666b0_ar.mp3",
+    "index": 4
   },
-  "malik": {
-    "arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
-    "english": "Maliki yawmid Deen",
-    "ar_audio": "audio/malik_ar.mp3",
-    "en_audio": "audio/malik_en.mp3"
+  "ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَٰلَمِينَ": {
+    "ar_audio": "audio/recite_005_ba87bbff_ar.mp3",
+    "index": 5
   },
-  "iyyak": {
-    "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
-    "english": "Iyyaka nabudu wa iyyaka nastaeen",
-    "ar_audio": "audio/iyyak_ar.mp3",
-    "en_audio": "audio/iyyak_en.mp3"
+  "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ": {
+    "ar_audio": "audio/recite_006_097b246e_ar.mp3",
+    "index": 6
   },
-  "ihdina": {
-    "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
-    "english": "Ihdinas-siraatal-mustaqeem",
-    "ar_audio": "audio/ihdina_ar.mp3",
-    "en_audio": "audio/ihdina_en.mp3"
+  "مَٰلِكِ يَوْمِ ٱلدِّينِ": {
+    "ar_audio": "audio/recite_007_ed27f00f_ar.mp3",
+    "index": 7
   },
-  "sirat": {
-    "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
-    "english": "Siraatal-ladheena an'amta alayhim",
-    "ar_audio": "audio/sirat_ar.mp3",
-    "en_audio": "audio/sirat_en.mp3"
+  "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ": {
+    "ar_audio": "audio/recite_008_c839d37e_ar.mp3",
+    "index": 8
   },
-  "subhana_rabbil_azim": {
-    "arabic": "سُبْحَانَ رَبِّيَ ٱلْعَظِيمِ",
-    "english": "Subhana Rabbiyal Adheem",
-    "ar_audio": "audio/subhana_rabbil_azim_ar.mp3",
-    "en_audio": "audio/subhana_rabbil_azim_en.mp3"
+  "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ": {
+    "ar_audio": "audio/recite_009_e6e9f42c_ar.mp3",
+    "index": 9
   },
-  "sami_allah": {
-    "arabic": "سَمِعَ ٱللَّٰهُ لِمَنْ حَمِدَهُ ۚ رَبَّنَا وَلَكَ ٱلْحَمْدُ",
-    "english": "Sami Allahu liman hamidah, Rabbana walakal hamd",
-    "ar_audio": "audio/sami_allah_ar.mp3",
-    "en_audio": "audio/sami_allah_en.mp3"
+  "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ": {
+    "ar_audio": "audio/recite_010_27c90744_ar.mp3",
+    "index": 10
   },
-  "subhana_rabbil_aala": {
-    "arabic": "سُبْحَانَ رَبِّيَ ٱلْأَعْلَىٰ",
-    "english": "Subhana Rabbiyal Aala",
-    "ar_audio": "audio/subhana_rabbil_aala_ar.mp3",
-    "en_audio": "audio/subhana_rabbil_aala_en.mp3"
+  "سُورَةُ ٱلْإِخْلَاصِ": {
+    "ar_audio": "audio/recite_011_a791ae56_ar.mp3",
+    "index": 11
   },
-  "rabbighfir": {
-    "arabic": "رَبِّ ٱغْفِرْ لِي، رَبِّ ٱغْفِرْ لِي",
-    "english": "Rabbighfir lee, Rabbighfir lee",
-    "ar_audio": "audio/rabbighfir_ar.mp3",
-    "en_audio": "audio/rabbighfir_en.mp3"
+  "قُلْ هُوَ ٱللَّٰهُ أَحَدٌ": {
+    "ar_audio": "audio/recite_012_48b43fd1_ar.mp3",
+    "index": 12
   },
-  "qul_huwa_allah": {
-    "arabic": "قُلْ هُوَ ٱللَّٰهُ أَحَدٌ",
-    "english": "Qul huwa Allahu Ahad",
-    "ar_audio": "audio/qul_huwa_allah_ar.mp3",
-    "en_audio": "audio/qul_huwa_allah_en.mp3"
+  "ٱللَّٰهُ ٱلصَّمَدُ": {
+    "ar_audio": "audio/recite_013_a87ca31c_ar.mp3",
+    "index": 13
   },
-  "allahus_samad": {
-    "arabic": "ٱللَّٰهُ ٱلصَّمَدُ",
-    "english": "Allahus Samad",
-    "ar_audio": "audio/allahus_samad_ar.mp3",
-    "en_audio": "audio/allahus_samad_en.mp3"
+  "لَمْ يَلِدْ وَلَمْ يُولَدْ": {
+    "ar_audio": "audio/recite_014_11199e5c_ar.mp3",
+    "index": 14
   },
-  "lam yalid": {
-    "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-    "english": "Lam yalid wa lam yoolad",
-    "ar_audio": "audio/lam yalid_ar.mp3",
-    "en_audio": "audio/lam yalid_en.mp3"
+  "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ": {
+    "ar_audio": "audio/recite_015_a79d8b38_ar.mp3",
+    "index": 15
   },
-  "wam_lam_yakun": {
-    "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ",
-    "english": "Wa lam yakun lahu kufuwan ahad",
-    "ar_audio": "audio/wam_lam_yakun_ar.mp3",
-    "en_audio": "audio/wam_lam_yakun_en.mp3"
+  "سُبْحَانَ رَبِّيَ ٱلْعَظِيمِ": {
+    "ar_audio": "audio/recite_016_1188f6f9_ar.mp3",
+    "index": 16
   },
-  "salawat": {
-    "arabic": "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
-    "english": "Allahumma salli ala Muhammad...",
-    "ar_audio": "audio/salawat_ar.mp3",
-    "en_audio": "audio/salawat_en.mp3"
+  "سَمِعَ ٱللَّٰهُ لِمَنْ حَمِدَهُ ۚ رَبَّنَا وَلَكَ ٱلْحَمْدُ": {
+    "ar_audio": "audio/recite_017_a1543772_ar.mp3",
+    "index": 17
   },
-  "salam": {
-    "arabic": "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ",
-    "english": "Assalamu alaikum wa rahmatullah",
-    "ar_audio": "audio/salam_ar.mp3",
-    "en_audio": "audio/salam_en.mp3"
+  "سُبْحَانَ رَبِّيَ ٱلْأَعْلَىٰ": {
+    "ar_audio": "audio/recite_018_77f001ed_ar.mp3",
+    "index": 18
   },
-  "tashahhud": {
-    "arabic": "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
-    "english": "At-tahiyyatu lillahi...",
-    "ar_audio": "audio/tashahhud_ar.mp3",
-    "en_audio": "audio/tashahhud_en.mp3"
+  "رَبِّ ٱغْفِرْ لِي، رَبِّ ٱغْفِرْ لِي": {
+    "ar_audio": "audio/recite_019_99751a07_ar.mp3",
+    "index": 19
   },
-  "qul_audhu_falaq": {
-    "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
-    "english": "Qul a'udhu bi rabbil-falaq",
-    "ar_audio": "audio/qul_audhu_falaq_ar.mp3",
-    "en_audio": "audio/qul_audhu_falaq_en.mp3"
+  "سُورَةُ ٱلْفَلَقِ": {
+    "ar_audio": "audio/recite_020_27c7c704_ar.mp3",
+    "index": 20
   },
-  "min_sharri": {
-    "arabic": "مِن شَرِّ مَا خَلَقَ",
-    "english": "Min sharri ma khalaq",
-    "ar_audio": "audio/min_sharri_ar.mp3",
-    "en_audio": "audio/min_sharri_en.mp3"
+  "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ": {
+    "ar_audio": "audio/recite_021_ca825ca4_ar.mp3",
+    "index": 21
   },
-  "qul_audhu_nas": {
-    "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
-    "english": "Qul a'udhu bi rabbinnas",
-    "ar_audio": "audio/qul_audhu_nas_ar.mp3",
-    "en_audio": "audio/qul_audhu_nas_en.mp3"
+  "مِن شَرِّ مَا خَلَقَ": {
+    "ar_audio": "audio/recite_022_e9f5b362_ar.mp3",
+    "index": 22
   },
-  "wa_duha": {
-    "arabic": "وَٱلضُّحَىٰ",
-    "english": "Wad duha",
-    "ar_audio": "audio/wa_duha_ar.mp3",
-    "en_audio": "audio/wa_duha_en.mp3"
+  "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ": {
+    "ar_audio": "audio/recite_023_c33d8b2f_ar.mp3",
+    "index": 23
   },
-  "wal_layl": {
-    "arabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
-    "english": "Wal layli iza saja",
-    "ar_audio": "audio/wal_layl_ar.mp3",
-    "en_audio": "audio/wal_layl_en.mp3"
+  "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلْعُقَدِ": {
+    "ar_audio": "audio/recite_024_ed88c6b8_ar.mp3",
+    "index": 24
+  },
+  "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ": {
+    "ar_audio": "audio/recite_025_321719f5_ar.mp3",
+    "index": 25
+  },
+  "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ": {
+    "ar_audio": "audio/recite_026_92f58603_ar.mp3",
+    "index": 26
+  },
+  "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ": {
+    "ar_audio": "audio/recite_027_f664f87a_ar.mp3",
+    "index": 27
+  },
+  "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ": {
+    "ar_audio": "audio/recite_028_ab72c732_ar.mp3",
+    "index": 28
+  },
+  "سُورَةُ ٱلنَّاسِ": {
+    "ar_audio": "audio/recite_029_47f0ccaa_ar.mp3",
+    "index": 29
+  },
+  "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ": {
+    "ar_audio": "audio/recite_030_c33710c3_ar.mp3",
+    "index": 30
+  },
+  "مَلِكِ ٱلنَّاسِ": {
+    "ar_audio": "audio/recite_031_395af589_ar.mp3",
+    "index": 31
+  },
+  "إِلَٰهِ ٱلنَّاسِ": {
+    "ar_audio": "audio/recite_032_029abeac_ar.mp3",
+    "index": 32
+  },
+  "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ": {
+    "ar_audio": "audio/recite_033_df775a1b_ar.mp3",
+    "index": 33
+  },
+  "ٱلَّذِي يُوَسْوِسُ فِي صُدُورِ ٱلنَّاسِ": {
+    "ar_audio": "audio/recite_034_02f5e98d_ar.mp3",
+    "index": 34
+  },
+  "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ": {
+    "ar_audio": "audio/recite_035_e5770869_ar.mp3",
+    "index": 35
+  },
+  "سُورَةُ ٱلْكَوْثَرِ": {
+    "ar_audio": "audio/recite_036_f46aa158_ar.mp3",
+    "index": 36
+  },
+  "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ": {
+    "ar_audio": "audio/recite_037_773df449_ar.mp3",
+    "index": 37
+  },
+  "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ": {
+    "ar_audio": "audio/recite_038_aaafa4a0_ar.mp3",
+    "index": 38
+  },
+  "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ": {
+    "ar_audio": "audio/recite_039_94d10651_ar.mp3",
+    "index": 39
+  },
+  "سُورَةُ ٱلْفَاتِحَةِ فَقَطْ (سِرًّا)": {
+    "ar_audio": "audio/recite_040_8cb17c64_ar.mp3",
+    "index": 40
+  },
+  "سُورَةُ ٱلْعَصْرِ": {
+    "ar_audio": "audio/recite_041_6ecd144b_ar.mp3",
+    "index": 41
+  },
+  "وَٱلْعَصْرِ": {
+    "ar_audio": "audio/recite_042_faa9e33d_ar.mp3",
+    "index": 42
+  },
+  "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ": {
+    "ar_audio": "audio/recite_043_cfcde99f_ar.mp3",
+    "index": 43
+  },
+  "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ": {
+    "ar_audio": "audio/recite_044_18436ed8_ar.mp3",
+    "index": 44
+  },
+  "سُورَةُ ٱلْفِيلِ": {
+    "ar_audio": "audio/recite_045_d3b855cb_ar.mp3",
+    "index": 45
+  },
+  "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ": {
+    "ar_audio": "audio/recite_046_ea0b7d89_ar.mp3",
+    "index": 46
+  },
+  "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ": {
+    "ar_audio": "audio/recite_047_7b094795_ar.mp3",
+    "index": 47
+  },
+  "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ": {
+    "ar_audio": "audio/recite_048_1f6067c3_ar.mp3",
+    "index": 48
+  },
+  "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ": {
+    "ar_audio": "audio/recite_049_b79b2810_ar.mp3",
+    "index": 49
+  },
+  "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ": {
+    "ar_audio": "audio/recite_050_1e316d63_ar.mp3",
+    "index": 50
+  },
+  "سُورَةُ ٱلْفَاتِحَةِ فَقَطْ": {
+    "ar_audio": "audio/recite_051_e5b55230_ar.mp3",
+    "index": 51
+  },
+  "ٱللَّٰهُ أَكْبَرُ (× ٧ إضافية)": {
+    "ar_audio": "audio/recite_052_6c111029_ar.mp3",
+    "index": 52
+  },
+  "سُورَةُ ٱلْأَعْلَىٰ": {
+    "ar_audio": "audio/recite_053_f3835cb9_ar.mp3",
+    "index": 53
+  },
+  "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى": {
+    "ar_audio": "audio/recite_054_354a4f82_ar.mp3",
+    "index": 54
+  },
+  "ٱلَّذِى خَلَقَ فَسَوَّىٰ": {
+    "ar_audio": "audio/recite_055_b12aa877_ar.mp3",
+    "index": 55
+  },
+  "وَٱلَّذِى قَدَّرَ فَهَدَىٰ": {
+    "ar_audio": "audio/recite_056_8b56579b_ar.mp3",
+    "index": 56
+  },
+  "سُورَةُ ٱلْغَاشِيَةِ": {
+    "ar_audio": "audio/recite_057_e6a09d73_ar.mp3",
+    "index": 57
+  },
+  "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَٰشِيَةِ": {
+    "ar_audio": "audio/recite_058_35fccf22_ar.mp3",
+    "index": 58
+  },
+  "وُجُوهٌ يَوْمَئِذٍ خَٰشِعَةٌ": {
+    "ar_audio": "audio/recite_059_b327159a_ar.mp3",
+    "index": 59
+  },
+  "عَامِلَةٌ نَّاصِبَةٌ": {
+    "ar_audio": "audio/recite_060_1ae48545_ar.mp3",
+    "index": 60
+  },
+  "ٱللَّٰهُ أَكْبَرُ — ثم ٱلْفَاتِحَة": {
+    "ar_audio": "audio/recite_061_eb12d3f2_ar.mp3",
+    "index": 61
+  },
+  "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ": {
+    "ar_audio": "audio/recite_062_bd6e157c_ar.mp3",
+    "index": 62
+  },
+  "ٱللَّٰهُمَّ ٱغْفِرْ لَهُ وَٱرْحَمْهُ وَعَافِهِ وَٱعْفُ عَنْهُ وَأَكْرِمْ نُزُلَهُ وَوَسِّعْ مُدْخَلَهُ": {
+    "ar_audio": "audio/recite_063_f1365288_ar.mp3",
+    "index": 63
+  },
+  "سُورَةُ ٱلضُّحَىٰ": {
+    "ar_audio": "audio/recite_064_d4495989_ar.mp3",
+    "index": 64
+  },
+  "وَٱلضُّحَىٰ": {
+    "ar_audio": "audio/recite_065_ea19aa7b_ar.mp3",
+    "index": 65
+  },
+  "وَٱلَّيْلِ إِذَا سَجَىٰ": {
+    "ar_audio": "audio/recite_066_c04ea3bf_ar.mp3",
+    "index": 66
+  },
+  "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ": {
+    "ar_audio": "audio/recite_067_f892b2cd_ar.mp3",
+    "index": 67
+  },
+  "وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ": {
+    "ar_audio": "audio/recite_068_b62e1316_ar.mp3",
+    "index": 68
+  },
+  "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ": {
+    "ar_audio": "audio/recite_069_4c56554d_ar.mp3",
+    "index": 69
+  },
+  "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ": {
+    "ar_audio": "audio/recite_070_0f1d3e34_ar.mp3",
+    "index": 70
+  },
+  "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ": {
+    "ar_audio": "audio/recite_071_ff20593c_ar.mp3",
+    "index": 71
+  },
+  "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ": {
+    "ar_audio": "audio/recite_072_d45e8c1a_ar.mp3",
+    "index": 72
+  },
+  "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ": {
+    "ar_audio": "audio/recite_073_94c39979_ar.mp3",
+    "index": 73
+  },
+  "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ": {
+    "ar_audio": "audio/recite_074_7c1c336f_ar.mp3",
+    "index": 74
+  },
+  "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ": {
+    "ar_audio": "audio/recite_075_92994836_ar.mp3",
+    "index": 75
+  },
+  "نَوَيْتُ الْوُضُوءَ": {
+    "ar_audio": "audio/recite_076_f80c489d_ar.mp3",
+    "index": 76
+  },
+  "بِسْمِ اللَّهِ": {
+    "ar_audio": "audio/recite_077_7c3e683d_ar.mp3",
+    "index": 77
+  },
+  "اللَّهُ أَكْبَرُ": {
+    "ar_audio": "audio/recite_078_0dacf4b4_ar.mp3",
+    "index": 78
+  },
+  "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ": {
+    "ar_audio": "audio/recite_079_d2d49193_ar.mp3",
+    "index": 79
+  },
+  "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ": {
+    "ar_audio": "audio/recite_080_04aab993_ar.mp3",
+    "index": 80
+  },
+  "الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ": {
+    "ar_audio": "audio/recite_081_a85c92fb_ar.mp3",
+    "index": 81
+  },
+  "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ": {
+    "ar_audio": "audio/recite_082_29522b6d_ar.mp3",
+    "index": 82
+  },
+  "سُبْحَانَ رَبِّيَ الْعَظِيمِ": {
+    "ar_audio": "audio/recite_083_f371409b_ar.mp3",
+    "index": 83
+  },
+  "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ": {
+    "ar_audio": "audio/recite_084_afad2761_ar.mp3",
+    "index": 84
+  },
+  "سُبْحَانَ رَبِّيَ الْأَعْلَى": {
+    "ar_audio": "audio/recite_085_86feb20c_ar.mp3",
+    "index": 85
+  },
+  "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ": {
+    "ar_audio": "audio/recite_086_3b21f1bf_ar.mp3",
+    "index": 86
+  },
+  "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ": {
+    "ar_audio": "audio/recite_087_2544caff_ar.mp3",
+    "index": 87
+  },
+  "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ": {
+    "ar_audio": "audio/recite_088_12eb788a_ar.mp3",
+    "index": 88
   }
 }

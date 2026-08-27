@@ -529,16 +529,29 @@
       updateStats();
     }
 
-    // Prayer position SVG file mapping
+    // Prayer position SVG file mapping — wudu steps + salah positions
     const postureImages = {
-      qiyaam: 'images/qiyam.svg',
-      takbir: 'images/takbir.svg',
-      ruku: 'images/ruku.svg',
-      sujud: 'images/sujud.svg',
-      jalsa: 'images/jalsa.svg',
-      tashahhud: 'images/tashahhud.svg',
-      salaam: 'images/salaam.svg',
-      'wudu-steps': 'images/wudu.svg'
+      // Salah positions
+      qiyaam: 'images/salah_qiyam.svg',
+      takbir: 'images/salah_takbir.svg',
+      ruku: 'images/salah_ruku.svg',
+      itidal: 'images/salah_itidal.svg',
+      sujud: 'images/salah_sujud.svg',
+      jalsa: 'images/salah_jalsa.svg',
+      tashahhud: 'images/salah_tashahhud.svg',
+      salaam: 'images/salah_salaam.svg',
+      // Wudu steps
+      'wudu-steps': 'images/wudu_niyyah.svg',
+      'wudu-niyyah': 'images/wudu_niyyah.svg',
+      'wudu-hands': 'images/wudu_hands.svg',
+      'wudu-mouth': 'images/wudu_mouth.svg',
+      'wudu-nose': 'images/wudu_nose.svg',
+      'wudu-face': 'images/wudu_face.svg',
+      'wudu-arms': 'images/wudu_arms.svg',
+      'wudu-head': 'images/wudu_head.svg',
+      'wudu-ears': 'images/wudu_ears.svg',
+      'wudu-feet': 'images/wudu_feet.svg',
+      'wudu-dua': 'images/wudu_dua.svg'
     };
 
     function getPostureSVG(image) {
@@ -552,12 +565,15 @@
 
     function findAudioForText(text) {
       if (!salahAudioManifest || !text) return null;
+      // Direct match: Arabic text is the manifest key
+      if (salahAudioManifest[text]) return salahAudioManifest[text].ar_audio;
+      // Partial match: check if text contains a manifest key
       for (const [key, entry] of Object.entries(salahAudioManifest)) {
-        if (entry.arabic === text) return entry.ar_audio;
+        if (key.length > 5 && text.includes(key)) return entry.ar_audio;
       }
-      // Partial match: check if text contains a key recitation
+      // Reverse partial: check if a manifest key contains our text
       for (const [key, entry] of Object.entries(salahAudioManifest)) {
-        if (text.includes(entry.arabic) && entry.arabic.length > 5) return entry.ar_audio;
+        if (text.length > 5 && key.includes(text)) return entry.ar_audio;
       }
       return null;
     }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <rect x="20" y="140" width="240" height="25" rx="4" fill="#d4af37" opacity="0.2"/>
+  <ellipse cx="55" cy="118" rx="18" ry="14" fill="url(#g)"/>
+  <path d="M70 113 Q100 88 150 83 Q180 81 200 88" stroke="url(#g)" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <path d="M55 123 Q40 128 35 136" stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M65 126 Q55 133 50 136" stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="195" cy="123" rx="10" ry="8" fill="#047857"/>
+  <path d="M200 98 Q215 103 220 113 L225 118" stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="228" cy="116" rx="8" ry="5" fill="#047857"/>
+  <text x="140" y="172" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">Sujud (Prostration)</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <rect x="40" y="235" width="160" height="25" rx="4" fill="#d4af37" opacity="0.2"/>
+  <circle cx="120" cy="45" r="22" fill="url(#g)"/><ellipse cx="120" cy="33" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <rect x="113" y="65" width="14" height="12" rx="4" fill="url(#g)"/>
+  <path d="M100 77 Q98 130 100 185 L140 185 Q142 130 140 77 Z" fill="url(#g)"/>
+  <path d="M100 95 Q70 105 60 130 Q55 145 65 150" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M140 95 Q170 105 180 130 Q185 145 175 150" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <line x1="60" y1="115" x2="65" y2="150" stroke="#60a5fa" stroke-width="2" opacity="0.5"/>
+  <line x1="178" y1="115" x2="175" y2="150" stroke="#60a5fa" stroke-width="2" opacity="0.5"/>
+  <text x="62" y="165" text-anchor="middle" fill="#60a5fa" font-size="10" opacity="0.7">elbow</text>
+  <text x="178" y="165" text-anchor="middle" fill="#60a5fa" font-size="10" opacity="0.7">elbow</text>
+  <path d="M108 185 Q105 215 102 235 L112 235 Q114 215 117 185" fill="url(#g)"/>
+  <path d="M123 185 Q126 215 128 235 L138 235 Q136 215 133 185" fill="url(#g)"/>
+  <ellipse cx="107" cy="242" rx="8" ry="5" fill="#047857"/><ellipse cx="133" cy="242" rx="8" ry="5" fill="#047857"/>
+  <text x="120" y="272" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">6. Wash Arms to Elbows (3×)</text>
+</svg>

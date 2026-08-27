@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <rect x="30" y="260" width="140" height="28" rx="4" fill="#d4af37" opacity="0.2"/>
+  <circle cx="100" cy="50" r="22" fill="url(#g)"/><ellipse cx="100" cy="38" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <rect x="93" y="70" width="14" height="12" rx="4" fill="url(#g)"/>
+  <path d="M75 82 Q73 140 75 200 L125 200 Q127 140 125 82 Z" fill="url(#g)"/>
+  <path d="M75 100 Q58 110 55 130 Q53 140 60 145" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M125 100 Q142 110 145 130 Q147 140 140 145" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <circle cx="58" cy="148" r="5" fill="#047857"/><circle cx="142" cy="148" r="5" fill="#047857"/>
+  <path d="M85 200 Q82 230 80 255 L90 255 Q92 230 95 200" fill="url(#g)"/>
+  <path d="M105 200 Q108 230 110 255 L120 255 Q118 230 115 200" fill="url(#g)"/>
+  <ellipse cx="85" cy="262" rx="9" ry="5" fill="#047857"/><ellipse cx="115" cy="262" rx="9" ry="5" fill="#047857"/>
+  <text x="100" y="292" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">1. Niyyah (Intention)</text>
+</svg>

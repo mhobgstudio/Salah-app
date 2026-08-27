@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <rect x="25" y="230" width="150" height="25" rx="4" fill="#d4af37" opacity="0.2"/>
+  <circle cx="100" cy="42" r="22" fill="url(#g)"/><ellipse cx="100" cy="30" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <path d="M82 62 Q80 120 85 170 L115 170 Q120 120 118 62 Z" fill="url(#g)"/>
+  <path d="M82 100 Q65 120 55 155" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M118 100 Q135 120 145 155" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M85 170 Q70 185 50 190 Q40 192 35 188" stroke="url(#g)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M115 170 Q120 185 125 195 L128 205" stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="130" cy="208" rx="6" ry="8" fill="#047857"/>
+  <text x="100" y="268" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">Jalsa (Sitting)</text>
+</svg>

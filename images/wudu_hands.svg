@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#065f46"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+  <ellipse cx="100" cy="220" rx="45" ry="12" fill="#60a5fa" opacity="0.25"/>
+  <circle cx="100" cy="50" r="22" fill="url(#g)"/><ellipse cx="100" cy="38" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <rect x="93" y="70" width="14" height="12" rx="4" fill="url(#g)"/>
+  <path d="M78 82 Q76 130 78 180 L122 180 Q124 130 122 82 Z" fill="url(#g)"/>
+  <path d="M78 100 Q55 115 50 140" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M122 100 Q145 115 150 140" stroke="url(#g)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <circle cx="48" cy="148" r="8" fill="#60a5fa" opacity="0.4"/><circle cx="152" cy="148" r="8" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="45" cy="158" r="3" fill="#60a5fa" opacity="0.6"/><circle cx="155" cy="158" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="50" cy="165" r="2" fill="#60a5fa" opacity="0.4"/><circle cx="150" cy="165" r="2" fill="#60a5fa" opacity="0.4"/>
+  <path d="M88 180 Q85 210 82 245 L92 245 Q94 210 97 180" fill="url(#g)"/>
+  <path d="M103 180 Q106 210 108 245 L118 245 Q116 210 113 180" fill="url(#g)"/>
+  <ellipse cx="87" cy="252" rx="8" ry="5" fill="#047857"/><ellipse cx="113" cy="252" rx="8" ry="5" fill="#047857"/>
+  <text x="100" y="285" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="600">2. Wash Hands (3×)</text>
+</svg>
