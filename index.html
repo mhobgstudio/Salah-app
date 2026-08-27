@@ -1,589 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SalahLearn Noor - Premium Islamic Prayer Mastery Guide</title>
-    <meta name="description" content="Master Salah (Islamic prayer) with interactive lessons covering ablution, recitations, postures, and spiritual meanings.">
-    <meta property="og:title" content="SalahLearn Noor - Premium Prayer Mastery">
-    <meta property="og:description" content="A premium sanctuary for mastering the sacred dialogue of Salah.">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕌</text></svg>">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Outfit:wght@300;400;600&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalahMaster — Interactive Prayer Learning Sanctuary</title>
+  <meta name="description" content="Master Islamic prayer (Salah) with interactive lessons, audio recitations, posture guides, and progress tracking. From Wudu to completion.">
+  <meta property="og:title" content="SalahMaster — Interactive Prayer Learning">
+  <meta property="og:description" content="Master Salah with interactive lessons, audio, and progress tracking.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕌</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#065f46">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --emerald: #065f46; --emerald-light: #059669; --emerald-dark: #022c22;
+      --gold: #d4a017; --gold-light: #f0c940; --cream: #fefce8;
+      --text: #1a1a2e; --text-dim: #6b7280;
+      --radius: 16px; --radius-sm: 8px; --radius-xl: 24px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      background-image: radial-gradient(circle at 20% 30%, rgba(6,95,70,0.04) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(212,160,23,0.04) 0%, transparent 40%);
+      color: var(--text); min-height: 100vh;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-    <style>
-        :root {
-            --primary-emerald: #064e3b;
-            --secondary-emerald: #065f46;
-            --accent-gold: #d97706;
-            --accent-gold-light: #fbbf24;
-            --bg-cream: #fffbeb;
-            --glass-white: rgba(255, 255, 255, 0.85);
-            --text-main: #064e3b;
-            --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
+    .header {
+      background: linear-gradient(135deg, var(--emerald-dark), var(--emerald), var(--emerald-light));
+      color: white; padding: 50px 0; text-align: center; position: relative; overflow: hidden;
+    }
+    .header::before {
+      content: 'الصلاة'; position: absolute; top: 20px; right: 40px;
+      font-family: 'Amiri', serif; font-size: 7rem; opacity: 0.04;
+    }
+    .header h1 {
+      font-family: 'Amiri', serif; font-size: 3rem; margin-bottom: 8px;
+    }
+    .header p { opacity: 0.9; font-size: 1.05rem; }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Outfit', sans-serif;
-        }
+    .bismillah {
+      font-family: 'Amiri', serif; font-size: 1.8rem; text-align: center;
+      color: var(--gold); margin: 24px 0 12px; opacity: 0.7;
+    }
 
-        body {
-            background: var(--bg-cream);
-            background-image: radial-gradient(circle at 20% 20%, rgba(6, 78, 59, 0.05) 0%, transparent 40%),
-                              radial-gradient(circle at 80% 80%, rgba(217, 119, 6, 0.05) 0%, transparent 40%);
-            color: var(--text-main);
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
+    /* Stats Bar */
+    .stats-bar {
+      display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
+      background: white; border-radius: var(--radius); padding: 20px 32px;
+      margin: 20px 0 32px; box-shadow: var(--shadow);
+    }
+    .stat-item { text-align: center; }
+    .stat-item .num { font-size: 1.5rem; font-weight: 800; color: var(--emerald); }
+    .stat-item .label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
 
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://www.transparenttextures.com/patterns/islamic-art.png');
-            opacity: 0.03;
-            pointer-events: none;
-            z-index: -1;
-        }
+    /* Pyramid Levels */
+    .pyramid {
+      display: flex; flex-direction: column; align-items: center; gap: 20px; perspective: 1000px;
+    }
+    .pyramid-row { display: flex; justify-content: center; width: 100%; gap: 16px; }
+    .pyramid-card {
+      flex: 1; max-width: 320px; background: white; border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 28px; text-align: center; cursor: pointer;
+      transition: var(--transition); border: 2px solid transparent; position: relative;
+    }
+    .pyramid-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+    .pyramid-card.active { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,160,23,0.15); }
+    .pyramid-card.locked { opacity: 0.5; cursor: not-allowed; filter: grayscale(0.6); }
+    .pyramid-card.locked:hover { transform: none; }
 
-        .app-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px 20px;
-        }
+    .pyramid-card .ring-wrap { margin: 0 auto 16px; position: relative; width: 72px; height: 72px; }
+    .pyramid-card .ring-wrap svg { width: 72px; height: 72px; transform: rotate(-90deg); }
+    .pyramid-card .ring-wrap .bg { fill: none; stroke: #f3f4f6; stroke-width: 6; }
+    .pyramid-card .ring-wrap .fg { fill: none; stroke: var(--gold); stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 0.6s ease; }
+    .pyramid-card .ring-wrap .pct-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; }
 
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px;
-            background: var(--glass-white);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            box-shadow: var(--shadow-soft);
-            border: 1px solid rgba(217, 119, 6, 0.2);
-        }
+    .pyramid-card h3 { font-family: 'Amiri', serif; font-size: 1.5rem; margin-bottom: 6px; color: var(--emerald); }
+    .pyramid-card .level-sub { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+    .pyramid-card p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5; }
+    .pyramid-card .lessons-count { font-size: 0.8rem; color: var(--text-dim); }
+    .pyramid-card .lock-icon { font-size: 1.5rem; margin-bottom: 8px; }
 
-        .header h1 {
-            font-family: 'Amiri', serif;
-            font-size: 3.5rem;
-            color: var(--primary-emerald);
-            margin-bottom: 10px;
-        }
+    /* Modal */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(4, 47, 46, 0.6);
+      backdrop-filter: blur(12px); z-index: 1000; justify-content: center; align-items: center;
+      padding: 20px;
+    }
+    .modal-overlay.active { display: flex; }
 
-        .header p {
-            font-weight: 300;
-            color: #4b5563;
-            font-size: 1.1rem;
-        }
+    .modal-content {
+      background: var(--cream); border-radius: var(--radius-xl); max-width: 900px;
+      width: 100%; max-height: 90vh; overflow-y: auto; position: relative;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.2);
+      animation: modal-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @keyframes modal-in { from { opacity: 0; transform: scale(0.9) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
 
-        .pyramid-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            width: 100%;
-            perspective: 1000px;
-        }
+    .modal-close {
+      position: sticky; top: 16px; float: right; margin-right: 20px; z-index: 10;
+      width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.1);
+      border: none; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: var(--transition); color: var(--text);
+    }
+    .modal-close:hover { background: rgba(0,0,0,0.2); }
 
-        .pyramid-level {
-            display: flex;
-            justify-content: center;
-            width: var(--level-width);
-            transition: all 0.5s ease;
-        }
+    .modal-body { padding: 40px; }
 
-        .level-card {
-            flex: 1;
-            background: var(--glass-white);
-            backdrop-filter: blur(12px);
-            border-radius: 28px;
-            padding: 35px;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid rgba(6, 78, 59, 0.1);
-            box-shadow: 0 4px 20px rgba(6, 78, 59, 0.05);
-            transition: all 0.4s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .modal-body h2 { font-family: 'Amiri', serif; font-size: 2rem; color: var(--emerald); margin-bottom: 8px; }
+    .modal-body .modal-desc { color: var(--text-dim); margin-bottom: 20px; }
 
-        .level-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent-gold);
-            background: white;
-            box-shadow: 0 20px 40px rgba(6, 78, 59, 0.1);
-        }
+    /* Lesson tabs inside modal */
+    .lesson-tabs {
+      display: flex; gap: 4px; background: white; border-radius: var(--radius-sm);
+      padding: 5px; margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .lesson-tab {
+      flex: 1; min-width: 80px; text-align: center; padding: 10px 14px;
+      border: none; background: transparent; font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; font-weight: 600; color: var(--text-dim); border-radius: 6px;
+      cursor: pointer; transition: var(--transition);
+    }
+    .lesson-tab:hover { background: rgba(6,95,70,0.04); }
+    .lesson-tab.active { background: var(--emerald); color: white; }
 
-        .level-card.locked { opacity: 0.5; cursor: not-allowed; filter: grayscale(1); }
+    .lesson-panel { display: none; animation: fade-up 0.3s ease; }
+    .lesson-panel.active { display: block; }
+    @keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-        .level-card h3 {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent-gold);
-            margin-bottom: 8px;
-        }
+    /* Content styles */
+    .posture-card {
+      background: white; border-radius: var(--radius); padding: 28px;
+      margin-bottom: 20px; border: 1px solid #e5e7eb; transition: var(--transition);
+    }
+    .posture-card:hover { border-color: var(--gold); }
 
-        .level-card h4 {
-            font-family: 'Amiri', serif;
-            font-size: 2.2rem;
-            color: var(--primary-emerald);
-            margin-bottom: 12px;
-        }
+    .posture-card .posture-header {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 16px;
+    }
+    .posture-card .posture-num {
+      width: 36px; height: 36px; background: var(--emerald); color: white;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;
+    }
+    .posture-card h3 { font-size: 1.2rem; font-weight: 700; }
 
-        .level-card p { font-size: 1rem; color: #4b5563; line-height: 1.6; }
+    .arabic-recitation {
+      font-family: 'Amiri', serif; font-size: 2rem; text-align: right; direction: rtl;
+      color: var(--emerald); margin: 16px 0; line-height: 1.6;
+    }
+    .transliteration { font-style: italic; color: var(--gold); font-size: 0.95rem; margin-bottom: 8px; }
+    .translation { color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px; }
 
-        .btn-start {
-            background: linear-gradient(135deg, var(--primary-emerald) 0%, var(--secondary-emerald) 100%);
-            color: white;
-            border: none;
-            padding: 14px 34px;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
+    .tip-box {
+      background: rgba(212, 160, 23, 0.06); border-left: 4px solid var(--gold);
+      padding: 16px 20px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin: 12px 0;
+    }
+    .tip-box h4 { font-size: 0.9rem; color: var(--gold); margin-bottom: 6px; }
+    .tip-box p { font-size: 0.85rem; color: var(--text-dim); }
 
-        .btn-start:hover { transform: scale(1.05); background: var(--accent-gold); }
+    .btn-audio {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;
+      background: var(--emerald); color: white; border: none; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+      transition: var(--transition); margin: 8px 0;
+    }
+    .btn-audio:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(6,95,70,0.3); }
+    .btn-audio.playing { background: var(--gold); }
 
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(4, 47, 46, 0.4);
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
+    .btn {
+      padding: 12px 24px; border: none; border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600;
+      cursor: pointer; transition: var(--transition);
+    }
+    .btn-primary { background: var(--emerald); color: white; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(6,95,70,0.3); }
+    .btn-secondary { background: white; border: 1px solid #d1d5db; color: var(--text); }
+    .btn-secondary:hover { background: #f9fafb; }
+    .btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--text); }
 
-        .modal-content-wrapper {
-            background: var(--bg-cream);
-            width: 95%; max-width: 1200px; height: 92vh;
-            border-radius: 44px;
-            position: relative; overflow: hidden;
-            display: flex; flex-direction: column;
-            border: 4px solid var(--glass-white);
-            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.3);
-        }
+    .lesson-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; border-top: 1px solid #e5e7eb; margin-top: 20px;
+    }
+    .lesson-progress {
+      flex: 1; height: 6px; background: #e5e7eb; border-radius: 3px; margin: 0 20px; overflow: hidden;
+    }
+    .lesson-progress .fill { height: 100%; background: linear-gradient(90deg, var(--emerald), var(--gold)); border-radius: 3px; transition: width 0.4s ease; }
 
-        .close-modal {
-            position: absolute; top: 25px; right: 30px;
-            font-size: 30px; cursor: pointer; z-index: 10;
-            color: var(--primary-emerald);
-        }
+    /* Quiz */
+    .quiz-card {
+      background: white; border-radius: var(--radius); padding: 24px;
+      border: 1px solid #e5e7eb; margin-bottom: 12px;
+    }
+    .quiz-card p { font-weight: 600; margin-bottom: 12px; }
+    .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .quiz-opt {
+      padding: 12px; border: 1px solid #d1d5db; border-radius: var(--radius-sm);
+      background: white; cursor: pointer; transition: var(--transition);
+      font-family: 'Inter', sans-serif; font-size: 0.9rem;
+    }
+    .quiz-opt:hover { border-color: var(--emerald); }
+    .quiz-opt.correct { border-color: var(--green); background: rgba(6,95,70,0.06); color: var(--emerald); }
+    .quiz-opt.wrong { border-color: #ef4444; background: rgba(239,68,68,0.06); color: #ef4444; }
 
-        .tab-container {
-            display: flex; background: rgba(6, 78, 59, 0.05);
-            padding: 8px; border-radius: 20px; margin: 20px 50px;
-        }
+    footer {
+      text-align: center; padding: 40px; color: var(--text-dim);
+      font-size: 0.85rem; border-top: 1px solid #e5e7eb; margin-top: 60px;
+    }
 
-        .tab {
-            flex: 1; text-align: center; padding: 12px;
-            cursor: pointer; border-radius: 15px; font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .tab.active { background: white; color: var(--accent-gold); box-shadow: var(--shadow-soft); }
-
-        .lesson-content { flex: 1; overflow-y: auto; padding: 30px 50px; }
-
-        /* Typography & Styling */
-        .arabic-text { 
-            font-family: 'Amiri', serif; 
-            font-size: 3rem; 
-            text-align: right; 
-            color: var(--primary-emerald);
-            line-height: 1.6;
-            margin: 20px 0;
-        }
-
-        .transliteration { font-style: italic; color: var(--accent-gold); margin-bottom: 10px; font-size: 1.1rem; }
-        .translation { font-size: 1.2rem; color: #374151; line-height: 1.5; }
-
-        .verse-card { 
-            background: white; 
-            padding: 35px; 
-            border-radius: 25px; 
-            margin-bottom: 30px; 
-            border-right: 8px solid var(--accent-gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-        }
-
-        .progress-bar-container { width: 100%; height: 12px; background: #e5e7eb; border-radius: 6px; margin: 20px 0; overflow: hidden; }
-        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--secondary-emerald), var(--accent-gold)); transition: width 0.5s ease; }
-
-        .posture-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            margin: 20px 0;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .audio-controls {
-            display: flex;
-            gap: 15px;
-            margin: 20px 0;
-            align-items: center;
-        }
-
-        .btn-secondary {
-            background: white;
-            border: 2px solid var(--secondary-emerald);
-            color: var(--secondary-emerald);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background: var(--secondary-emerald);
-            color: white;
-        }
-
-        .explanation-components {
-            margin-top: 30px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        .component h4 { color: var(--accent-gold); margin: 15px 0 10px; }
-
-        .verse-item {
-            padding: 15px;
-            background: rgba(6, 78, 59, 0.03);
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-
-        .verse-number { font-weight: 600; color: var(--secondary-emerald); font-size: 0.9rem; margin-bottom: 5px; }
-
-        /* Progress Rings */
-        .progress-ring { width: 70px; height: 70px; margin-bottom: 15px; }
-        .progress-ring circle { fill: transparent; stroke-width: 8; }
-        .progress-ring .background { stroke: #f3f4f6; }
-        .progress-ring .foreground { stroke: var(--accent-gold); stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; }
-
-    </style>
+    @media (max-width: 768px) {
+      .header h1 { font-size: 2.2rem; }
+      .pyramid-row { flex-direction: column; align-items: center; }
+      .pyramid-card { max-width: 100%; }
+      .modal-body { padding: 24px; }
+      .quiz-options { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <div class="app-container">
-        <header class="header">
-            <h1>SalahLearn Noor</h1>
-            <p>A premium sanctuary for mastering the sacred dialogue of Salah.</p>
-        </header>
+  <header class="header">
+    <div class="container">
+      <h1>SalahMaster</h1>
+      <p>A sacred sanctuary for mastering the dialogue of Salah — step by step, posture by posture.</p>
+    </div>
+  </header>
 
-        <main id="levelsContainer">
-            <!-- Dynamic Levels Content -->
-        </main>
+  <div class="container">
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="num" id="lessons-done">0</div><div class="label">Lessons Done</div></div>
+      <div class="stat-item"><div class="num" id="quiz-score">0</div><div class="label">Quiz Score</div></div>
+      <div class="stat-item"><div class="num" id="streak">0</div><div class="label">Day Streak</div></div>
     </div>
 
-    <!-- Universal Modal -->
-    <div id="levelModal" class="modal">
-        <div class="modal-content-wrapper">
-            <span class="close-modal" onclick="closeModal()">&#xd7;</span>
-            
-            <!-- Level Overview Stage -->
-            <div id="modalOverview" style="padding: 50px;">
-                <h2 id="modalLevelTitle" style="font-family: Amiri; font-size: 3rem; color: var(--primary-emerald);"></h2>
-                <p id="modalLevelDesc" style="font-size: 1.2rem; margin: 20px 0; color: #4b5563;"></p>
-                <div id="levelTopics" style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;"></div>
-                
-                <h3 style="margin-bottom: 15px;">Curriculum:</h3>
-                <div id="lessonList" style="display: grid; gap: 15px;"></div>
-            </div>
+    <div class="pyramid" id="pyramid-container"></div>
+  </div>
 
-            <!-- Active Lesson Stage -->
-            <div id="lessonContainer" style="display:none; flex-direction: column; height: 100%;">
-                <div class="tab-container">
-                    <div class="tab active" onclick="switchTab('overview')">Overview</div>
-                    <div class="tab" onclick="switchTab('demonstration')">Demonstration</div>
-                    <div class="tab" onclick="switchTab('practice')">Practice</div>
-                    <div class="tab" onclick="switchTab('quiz')">Quiz</div>
-                </div>
-                
-                <div class="lesson-content" id="lessonContent"></div>
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
 
-                <div style="padding: 25px 50px; background: white; border-top: 1px solid #eee; display: flex; align-items: center; justify-content: space-between;">
-                    <button class="btn-secondary" onclick="previousStep()">Previous Step</button>
-                    <div style="flex: 1; margin: 0 40px;">
-                        <div class="progress-bar-container">
-                            <div id="lessonProgress" class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <button class="btn-start" onclick="nextStep()" style="margin-top:0;">Next Step</button>
-                </div>
-            </div>
+  <footer>
+    <p>SalahMaster — May your prayer be accepted. 🤲</p>
+  </footer>
+
+  <script>
+    // Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+
+    const levels = [
+      { id: 1, title: 'Purification', subtitle: 'Wudu & Cleanliness', icon: '💧', desc: 'Learn the essential purifications before Salah.',
+        unlocked: true, lessons: [
+          { title: 'Wudu (Ablution)', objectives: ['Understand the steps of Wudu', 'Learn the dua after Wudu', 'Know what breaks Wudu'],
+            content: `Wudu (ablution) is the ritual purification required before Salah. Allah says: "O you who believe! When you rise to pray, wash your faces and your hands up to the elbows, and wipe your heads, and wash your feet up to the ankles." (Quran 5:6)`,
+            postures: [
+              { name: 'Intention (Niyyah)', arabic: 'نَوَيْتُ الْوُضُوءَ', transliteration: 'Nawaytul wudū\'a', translation: 'I intend to perform ablution.', tip: 'Make intention silently in your heart.' },
+              { name: 'Wash Hands', arabic: 'بِسْمِ اللَّهِ', transliteration: 'Bismillāh', translation: 'In the name of Allah.', tip: 'Wash hands up to wrists three times, starting with the right.' },
+              { name: 'Rinse Mouth & Nose', arabic: '—', translation: 'Rinse mouth three times and nose three times with water.', tip: 'Use your right hand to cup water.' },
+              { name: 'Wash Face', arabic: '—', translation: 'Wash face from forehead to chin and ear to ear three times.', tip: 'Ensure water reaches all parts of the face.' },
+              { name: 'Wash Arms', arabic: '—', translation: 'Wash right arm then left arm up to elbows three times each.', tip: 'Start with the right arm first.' },
+              { name: 'Wipe Head & Ears', arabic: '—', translation: 'Wipe the top of the head with wet hands once, then wipe inside and behind ears.', tip: 'Use fresh water for ears.' },
+              { name: 'Wash Feet', arabic: '—', translation: 'Wash right foot then left foot up to ankles three times each.', tip: 'Ensure water reaches between toes.' }
+            ],
+            quiz: [
+              { q: 'How many times do you wash each body part in Wudu?', options: ['Once', 'Three times', 'Seven times', 'Ten times'], correct: 1 },
+              { q: 'What is the first step of Wudu?', options: ['Wash face', 'Wash hands', 'Intention (Niyyah)', 'Rinse mouth'], correct: 2 },
+              { q: 'What breaks Wudu?', options: ['Eating', 'Sleeping', 'Laughing', 'Walking'], correct: 1 }
+            ]
+          }
+        ]},
+      { id: 2, title: 'The Opening', subtitle: 'Takbir & Qiyam', icon: '📖', desc: 'Begin your prayer with Takbir and stand before Allah.',
+        unlocked: false, lessons: [
+          { title: 'Opening of Salah', objectives: ['Learn Takbirat al-Ihram', 'Understand Qiyam', 'Memorize Dua al-Istiftah'],
+            content: 'Salah begins with Takbirat al-Ihram — raising your hands and saying "Allahu Akbar" (Allah is the Greatest). This act separates the ordinary from the sacred.',
+            postures: [
+              { name: 'Takbirat al-Ihram', arabic: 'اللَّهُ أَكْبَرُ', transliteration: 'Allāhu Akbar', translation: 'Allah is the Greatest.', tip: 'Raise hands to ears (men) or shoulders (women). Palms face forward.' },
+              { name: 'Qiyam (Standing)', arabic: '—', translation: 'Stand with right hand over left on chest. Recite opening supplication then Surah Al-Fatiha.', tip: 'Focus your gaze on the place of prostration.' }
+            ],
+            quiz: [
+              { q: 'What do you say to begin Salah?', options: ['Bismillah', 'Allahu Akbar', 'Assalamu Alaikum', 'Alhamdulillah'], correct: 1 }
+            ]
+          }
+        ]},
+      { id: 3, title: 'The Heart', subtitle: 'Surah Al-Fatiha', icon: '📜', desc: 'The most important chapter — recited in every Rak\'ah.',
+        unlocked: false, lessons: [
+          { title: 'Mastering Al-Fatiha', objectives: ['Memorize Al-Fatiha', 'Understand its meaning', 'Recite with correct Tajweed'],
+            content: 'Surah Al-Fatiha is the essence of the Quran. The Prophet ﷺ said: "There is no Salah for the one who does not recite Al-Fatiha."',
+            postures: [
+              { name: 'Verse 1', arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ', transliteration: 'Bismillāhi r-rahmāni r-rahīm', translation: 'In the name of Allah, the Most Gracious, the Most Merciful.' },
+              { name: 'Verse 2', arabic: 'الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ', transliteration: 'Al-ḥamdu lillāhi rabbi l-\'ālamīn', translation: 'All praise is for Allah, Lord of all worlds.' },
+              { name: 'Verse 3-4', arabic: 'الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ', transliteration: 'Ar-rahmāni r-rahīm. Māliki yawmi d-dīn', translation: 'The Most Gracious, the Most Merciful. Master of the Day of Judgment.' },
+              { name: 'Verse 5', arabic: 'إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ', transliteration: 'Iyyāka na\'budu wa iyyāka nasta\'īn', translation: 'You alone we worship, and You alone we ask for help.' },
+              { name: 'Verses 6-7', arabic: 'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ', transliteration: 'Ihdinā ṣ-ṣirāṭa l-mustaqīm. Ṣirāṭa l-laḏīna an\'amta \'alayhim', translation: 'Guide us to the straight path — the path of those You have blessed.' }
+            ],
+            quiz: [
+              { q: 'How many verses are in Surah Al-Fatiha?', options: ['5', '6', '7', '8'], correct: 2 }
+            ]
+          }
+        ]},
+      { id: 4, title: 'Movement', subtitle: 'Ruku & Sujood', icon: '🕌', desc: 'Learn the physical postures that express submission to Allah.',
+        unlocked: false, lessons: [
+          { title: 'Bow & Prostrate', objectives: ['Learn Ruku (bowing)', 'Learn Sujood (prostration)', 'Understand their meanings'],
+            content: 'Ruku and Sujood are physical expressions of humility before Allah. The Prophet ﷺ said: "The closest a servant is to his Lord is when he is in prostration."',
+            postures: [
+              { name: 'Ruku (Bowing)', arabic: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ', transliteration: 'Subḥāna rabbiya l-\'aẓīm', translation: 'Glory be to my Lord, the Most Great.', tip: 'Keep back straight, hands on knees.' },
+              { name: 'Standing after Ruku', arabic: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ', transliteration: 'Sami\'a llāhu liman ḥamidah', translation: 'Allah hears those who praise Him.' },
+              { name: 'Sujood (Prostration)', arabic: 'سُبْحَانَ رَبِّيَ الْأَعْلَى', transliteration: 'Subḥāna rabbiya l-a\'lā', translation: 'Glory be to my Lord, the Most High.', tip: 'Seven body parts touch the ground.' }
+            ],
+            quiz: [
+              { q: 'How many body parts touch the ground in Sujood?', options: ['5', '7', '9', '3'], correct: 1 },
+              { q: 'What is said during Ruku?', options: ['Subhana Rabbiyal A\'la', 'Subhana Rabbiyal Azeem', 'Allahu Akbar', 'Sami Allahu liman hamidah'], correct: 1 }
+            ]
+          }
+        ]},
+      { id: 5, title: 'Completion', subtitle: 'Tashahhud & Salam', icon: '🤲', desc: 'Complete your prayer with Tashahhud, Durood, and Salam.',
+        unlocked: false, lessons: [
+          { title: 'Finishing the Prayer', objectives: ['Memorize Tashahhud', 'Learn Durood', 'Complete with Salam'],
+            content: 'The prayer concludes with Tashahhud (testimony of faith), sending blessings on the Prophet ﷺ, and Salam to the right and left.',
+            postures: [
+              { name: 'Tashahhud', arabic: 'التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ', transliteration: 'At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt', translation: 'All greetings, prayers, and good deeds are for Allah.' },
+              { name: 'Durood', arabic: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ', transliteration: 'Allāhumma ṣalli \'alā Muḥammad', translation: 'O Allah, send blessings upon Muhammad.' },
+              { name: 'Salam', arabic: 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ', transliteration: 'As-salāmu \'alaykum wa raḥmatu llāh', translation: 'Peace and mercy of Allah be upon you.' }
+            ],
+            quiz: [
+              { q: 'How many times do you say Salam at the end of prayer?', options: ['Once', 'Twice (right then left)', 'Three times', 'Four times'], correct: 1 }
+            ]
+          }
+        ]}
+    ];
+
+    // State
+    let completedLessons = JSON.parse(localStorage.getItem('salahLessons') || '[]');
+    // Restore unlocked levels from localStorage
+    const savedUnlocked = JSON.parse(localStorage.getItem('salahUnlocked') || '[1]');
+    levels.forEach(l => { l.unlocked = savedUnlocked.includes(l.id); });
+    let quizResults = JSON.parse(localStorage.getItem('salahQuizzes') || '[]');
+    let streakData = JSON.parse(localStorage.getItem('salahStreak') || '{"count":0,"last":""}');
+
+    // Functions
+    function getCircumference(r) { return 2 * Math.PI * r; }
+    function getOffset(pct, r) { const c = getCircumference(r); return c - (pct / 100) * c; }
+
+    function renderLevels() {
+      const container = document.getElementById('pyramid-container');
+      // Bottom-up order (show 5-1 reverse)
+      const reversed = [...levels].reverse();
+      // Build pyramid: widest at bottom, narrower at top
+      const widths = [95, 85, 75, 65, 55]; // percentages
+      container.innerHTML = reversed.map((lvl, i) => {
+        const isLocked = !lvl.unlocked;
+        const lvlProgress = completedLessons.filter(id => id.level === lvl.id).length || 0;
+        const totalLvlLessons = lvl.lessons.length;
+        const pct = totalLvlLessons ? Math.round((lvlProgress / totalLvlLessons) * 100) : 0;
+        const r = 30, c = getCircumference(r);
+        return `<div class="pyramid-card ${isLocked ? 'locked' : ''}" onclick="${isLocked ? '' : `openLevel(${lvl.id})`}" style="width:${widths[i]}%">
+          <div class="ring-wrap">
+            <svg viewBox="0 0 72 72">
+              <circle class="bg" cx="36" cy="36" r="${r}"/>
+              <circle class="fg" cx="36" cy="36" r="${r}" style="stroke-dasharray:${c};stroke-dashoffset:${isLocked ? c : getOffset(pct, r)}"/>
+            </svg>
+            <div class="pct-text">${isLocked ? '🔒' : pct + '%'}</div>
+          </div>
+          <div class="level-sub">Level ${lvl.id}</div>
+          <h3>${lvl.title}</h3>
+          <p>${lvl.desc}</p>
+          <div class="lessons-count">${lvl.lessons.length} lesson${lvl.lessons.length > 1 ? 's' : ''}</div>
+        </div>`;
+      }).join('');
+    }
+
+    function openLevel(id) {
+      const lvl = levels.find(l => l.id === id);
+      if (!lvl || !lvl.unlocked) return;
+      currentLevelId = id;
+      currentLessonIdx = 0;
+      currentTab = 'lessons';
+      updateModal();
+      document.getElementById('modal').classList.add('active');
+    }
+
+    let currentLevelId = 1, currentLessonIdx = 0, currentTab = 'lessons';
+
+    function closeModal() { document.getElementById('modal').classList.remove('active'); }
+
+    function switchTab(tab) { currentTab = tab; updateModal(); }
+
+    function updateModal() {
+      const lvl = levels.find(l => l.id === currentLevelId);
+      if (!lvl) return;
+      const lesson = lvl.lessons[currentLessonIdx];
+      const body = document.getElementById('modal-body');
+
+      const tabs = ['lessons', 'postures', 'quiz'];
+      const tabLabels = ['📖 Lesson', '🧎 Postures', '🧠 Quiz'];
+
+      let html = `<h2>${lvl.title}: ${lesson.title}</h2>
+        <p class="modal-desc">${lvl.subtitle} — Level ${lvl.id}</p>
+        <div class="lesson-tabs">
+          ${tabs.map((t, i) => `<button class="lesson-tab ${currentTab === t ? 'active' : ''}" onclick="switchTab('${t}')">${tabLabels[i]}</button>`).join('')}
+        </div>`;
+
+      if (currentTab === 'lessons') {
+        html += `<div class="posture-card">
+          <h3 style="margin-bottom:12px;">🎯 Learning Objectives</h3>
+          <ul style="margin-left:20px;">${lesson.objectives.map(o => `<li style="margin-bottom:8px;color:var(--text-dim);">${o}</li>`).join('')}</ul>
         </div>
-    </div>
+        <div class="posture-card">
+          <h3 style="margin-bottom:12px;">📝 Content</h3>
+          <p style="color:var(--text-dim);line-height:1.7;">${lesson.content}</p>
+        </div>`;
+      } else if (currentTab === 'postures') {
+        html += lesson.postures.map((p, i) => `
+          <div class="posture-card">
+            <div class="posture-header">
+              <span class="posture-num">${i+1}</span>
+              <h3>${p.name}</h3>
+            </div>
+            ${p.arabic ? `<div class="arabic-recitation">${p.arabic}</div>` : ''}
+            ${p.transliteration ? `<div class="transliteration">${p.transliteration}</div>` : ''}
+            ${p.translation ? `<div class="translation">${p.translation}</div>` : ''}
+            ${p.tip ? `<div class="tip-box"><h4>💡 Practice Tip</h4><p>${p.tip}</p></div>` : ''}
+            <button class="btn-audio" onclick="reciteArabic('${p.arabic || p.translation || ''}')">🔊 Listen to Recitation</button>
+          </div>
+        `).join('');
+      } else {
+        html += lesson.quiz.map((q, qi) => `
+          <div class="quiz-card">
+            <p>${q.q}</p>
+            <div class="quiz-options">
+              ${q.options.map((opt, oi) => `<button class="quiz-opt" onclick="checkQuiz(${qi}, ${oi}, ${q.correct})">${opt}</button>`).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
 
-    <!-- Application Data and Logic -->
-    <script src="levels.js"></script>
-    <script>
-        // State Management
-        const userRewards = { points: 0, badges: [], streak: 0, lastCompleted: null };
-        let currentLesson = { levelId: null, lessonIndex: 0, step: 'overview', progress: 0 };
-        let demoState = { currentPostureIndex: 0, isPlaying: false, playbackSpeed: 1, demoProgress: 0 };
+      html += `<div class="lesson-nav">
+        <button class="btn btn-secondary" onclick="prevLesson()">← Previous</button>
+        <div class="lesson-progress"><div class="fill" style="width:${((currentLessonIdx + 1) / lvl.lessons.length) * 100}%"></div></div>
+        <button class="btn btn-primary" onclick="nextLesson()">${currentLessonIdx < lvl.lessons.length - 1 ? 'Next →' : '✅ Complete Level'}</button>
+      </div>`;
 
-        // Initialization
-        window.addEventListener('load', () => {
-            renderLevels();
+      body.innerHTML = html;
+      updateStats();
+    }
+
+    function prevLesson() {
+      if (currentLessonIdx > 0) { currentLessonIdx--; currentTab = 'lessons'; updateModal(); }
+    }
+
+    function nextLesson() {
+      const lvl = levels.find(l => l.id === currentLevelId);
+      if (currentLessonIdx < lvl.lessons.length - 1) {
+        currentLessonIdx++;
+        currentTab = 'lessons';
+        updateModal();
+      } else {
+        // Complete level
+        if (!completedLessons.find(l => l.level === currentLevelId)) {
+          completedLessons.push({ level: currentLevelId, completedAt: new Date().toISOString() });
+          localStorage.setItem('salahLessons', JSON.stringify(completedLessons));
+          // Unlock next level
+          const next = levels.find(l => l.id === currentLevelId + 1);
+          if (next) {
+            next.unlocked = true;
+            // Persist unlocked levels
+            const unlockedIds = levels.filter(l => l.unlocked).map(l => l.id);
+            localStorage.setItem('salahUnlocked', JSON.stringify(unlockedIds));
+          }
+          // Update streak
+          const today = new Date().toDateString();
+          if (streakData.last !== today) {
+            const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
+            if (streakData.last === yesterday.toDateString()) streakData.count++;
+            else streakData.count = 1;
+            streakData.last = today;
+            localStorage.setItem('salahStreak', JSON.stringify(streakData));
+          }
+          renderLevels();
+          closeModal();
+          updateStats();
+          alert(`🎉 Level ${currentLevelId} complete!`);
+        } else {
+          closeModal();
+        }
+      }
+    }
+
+    let quizAnswered = {};
+    function checkQuiz(qi, oi, correct) {
+      if (quizAnswered[qi] !== undefined) return;
+      quizAnswered[qi] = oi;
+      const btns = document.querySelectorAll('.quiz-card')[qi]?.querySelectorAll('.quiz-opt');
+      if (btns) {
+        btns.forEach((b, i) => {
+          b.style.pointerEvents = 'none';
+          if (i === correct) b.classList.add('correct');
+          else if (i === oi && oi !== correct) b.classList.add('wrong');
         });
+      }
+      if (oi === correct) {
+        quizResults.push(1);
+      } else {
+        quizResults.push(0);
+      }
+      localStorage.setItem('salahQuizzes', JSON.stringify(quizResults));
+      updateStats();
+    }
 
-        function createProgressRing(progress) {
-            const radius = 30;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (progress / 100) * circumference;
-            return `
-                <svg class="progress-ring" viewBox="0 0 100 100">
-                    <circle class="background" cx="50" cy="50" r="${radius}" />
-                    <circle class="foreground" cx="50" cy="50" r="${radius}" 
-                            style="stroke-dasharray: ${circumference}; stroke-dashoffset: ${offset};"
-                            transform="rotate(-90 50 50)" />
-                    <text x="50" y="58" text-anchor="middle" fill="var(--primary-emerald)" font-weight="600" font-size="16">${Math.round(progress)}%</text>
-                </svg>`;
-        }
+    function reciteArabic(text) {
+      if (!text || !('speechSynthesis' in window)) return;
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'ar-SA'; u.rate = 0.8;
+      speechSynthesis.speak(u);
+    }
 
-        function renderLevels() {
-            const container = document.getElementById('levelsContainer');
-            if (!container) return;
-            container.innerHTML = '';
-            
-            const pyramidContainer = document.createElement('div');
-            pyramidContainer.className = 'pyramid-container';
-            
-            const baseWidth = 100;
-            const widthDecrement = (baseWidth - 40) / (levels.length - 1);
-            
-            // Build pyramid from bottom (Level 7) to top (Level 1)
-            for (let i = levels.length - 1; i >= 0; i--) {
-                const level = levels[i];
-                const width = baseWidth - (levels.length - 1 - i) * widthDecrement;
-                const pyramidLevel = document.createElement('div');
-                pyramidLevel.className = 'pyramid-level';
-                pyramidLevel.style.setProperty('--level-width', `${width}%`);
-                
-                pyramidLevel.innerHTML = `
-                    <div class="level-card ${!level.unlocked ? 'locked' : ''}" 
-                         onclick="${level.unlocked ? `openLevel(${level.id})` : ''}">
-                        ${createProgressRing(level.progress)}
-                        <h3>Level ${level.id}</h3>
-                        <h4>${level.title}</h4>
-                        <p>${level.description}</p>
-                        ${level.unlocked ? '<button class="btn-start">Enter Level</button>' : '<p style="color:#9ca3af; margin-top:10px;">Locked</p>'}
-                    </div>`;
-                pyramidContainer.appendChild(pyramidLevel);
-            }
-            container.appendChild(pyramidContainer);
-        }
+    function updateStats() {
+      document.getElementById('lessons-done').textContent = completedLessons.length;
+      const correct = quizResults.filter(v => v).length;
+      document.getElementById('quiz-score').textContent = correct;
+      document.getElementById('streak').textContent = streakData.count;
+    }
 
-        function openLevel(levelId) {
-            const level = levels.find(l => l.id === levelId);
-            if (!level) return;
-            
-            currentLesson.levelId = levelId;
-            const modal = document.getElementById('levelModal');
-            document.getElementById('modalLevelTitle').textContent = level.title;
-            document.getElementById('modalLevelDesc').textContent = level.description;
-            document.getElementById('levelTopics').innerHTML = level.topics.map(t => `<span style="background:rgba(6,78,59,0.1); padding:5px 15px; border-radius:20px; font-size:0.9rem;">${t}</span>`).join('');
-            
-            document.getElementById('lessonList').innerHTML = level.lessons.map((l, i) => `
-                <div style="background:white; padding:20px; border-radius:15px; border:1px solid #eee; display:flex; justify-content:space-between; cursor:pointer;" onclick="startLesson(${i})">
-                    <span style="font-weight:600;">${l.title}</span>
-                    <span style="color:var(--accent-gold);">Start →</span>
-                </div>
-            `).join('');
-
-            modal.style.display = 'flex';
-            document.getElementById('modalOverview').style.display = 'block';
-            document.getElementById('lessonContainer').style.display = 'none';
-        }
-
-        function closeModal() {
-            document.getElementById('levelModal').style.display = 'none';
-        }
-
-        function startLesson(index) {
-            currentLesson.lessonIndex = index;
-            currentLesson.step = 'overview';
-            currentLesson.progress = 0;
-            
-            document.getElementById('modalOverview').style.display = 'none';
-            document.getElementById('lessonContainer').style.display = 'flex';
-            updateLessonContent();
-        }
-
-        function switchTab(tab) {
-            currentLesson.step = tab;
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelector(`.tab[onclick*="${tab}"]`).classList.add('active');
-            updateLessonContent();
-        }
-
-        function updateLessonContent() {
-            const level = levels.find(l => l.id === currentLesson.levelId);
-            const lesson = level.lessons[currentLesson.lessonIndex];
-            const content = document.getElementById('lessonContent');
-            
-            switch(currentLesson.step) {
-                case 'overview':
-                    content.innerHTML = `
-                        <h2 style="font-size:2rem; margin-bottom:15px;">${lesson.title}</h2>
-                        <div class="verse-card">
-                            <h4 style="color:var(--secondary-emerald); margin-bottom:10px;">Learning Objectives:</h4>
-                            <ul style="margin-left:20px;">
-                                ${lesson.objectives.map(o => `<li>${o}</li>`).join('')}
-                            </ul>
-                        </div>
-                        <p style="font-size:1.1rem; line-height:1.7;">${lesson.content}</p>
-                    `;
-                    break;
-                    
-                case 'demonstration':
-                    content.innerHTML = `
-                        <h2 style="margin-bottom:10px;">Full Prayer Walkthrough</h2>
-                        <p style="color:#6b7280; margin-bottom:30px;">Review every step below before proceeding to Practice.</p>
-                        ${lesson.postures.map((p, i) => `
-                            <div class="posture-section" style="margin-bottom:40px; padding-bottom:30px; border-bottom:2px solid rgba(6,78,59,0.1);">
-                                <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
-                                    <span style="background:var(--accent-gold); color:white; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0;">${i+1}</span>
-                                    <h3 style="font-size:1.4rem; color:var(--primary-emerald);">${p.name}</h3>
-                                </div>
-                                <div style="text-align:center; margin-bottom:20px;">${postureImages[p.image] || ''}</div>
-                                ${(p.recitations || []).map(r => `
-                                    <div class="verse-card">
-                                        <div class="arabic-text">${r.arabic || ''}</div>
-                                        ${r.transliteration ? `<div class="transliteration">${r.transliteration}</div>` : ''}
-                                        ${r.translation ? `<div class="translation">${r.translation}</div>` : ''}
-                                        ${r.explanation ? `<div class="explanation-components">${getExplanationHTML(r.explanation)}</div>` : ''}
-                                    </div>
-                                `).join('')}
-                                ${p.practice_tips ? `
-                                    <div style="background:rgba(217,119,6,0.06); border-left:4px solid var(--accent-gold); padding:20px; border-radius:0 15px 15px 0; margin-top:15px;">
-                                        <h4 style="color:var(--accent-gold); margin-bottom:10px;">💡 Practice Tips</h4>
-                                        ${Object.entries(p.practice_tips).map(([key, val]) => `
-                                            <p style="margin-bottom:8px;"><strong>${key.replace(/_/g,' ').replace(/\b\w/g,l=>l.toUpperCase())}:</strong> ${val}</p>
-                                        `).join('')}
-                                    </div>
-                                ` : ''}
-                            </div>
-                        `).join('')}
-                    `;
-                    break;
-
-                case 'practice':
-                    content.innerHTML = `
-                        <h2>Practice Mode</h2>
-                        <div class="verse-card">
-                            ${lesson.practice || '<p>Follow the demonstration patterns to master the flow.</p>'}
-                        </div>
-                    `;
-                    break;
-
-                case 'quiz':
-                    content.innerHTML = `
-                        <h2>Knowledge Check</h2>
-                        <div id="quizArea">
-                            ${lesson.quiz.map((q, i) => `
-                                <div class="verse-card">
-                                    <p style="font-weight:600; margin-bottom:15px;">${q.question}</p>
-                                    <div style="display:grid; gap:10px;">
-                                        ${q.options.map((opt, optIdx) => `
-                                            <button class="btn-secondary" onclick="checkAnswer(${i}, ${optIdx}, ${q.correct})">${opt}</button>
-                                        `).join('')}
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    `;
-                    break;
-            }
-            
-            document.getElementById('lessonProgress').style.width = `${currentLesson.progress}%`;
-        }
-
-        function checkAnswer(qIdx, selected, correct) {
-            if(selected === correct) {
-                alert("Correct! Excellent focus.");
-            } else {
-                alert("Not quite. Pure focus leads to wisdom. Try again.");
-            }
-        }
-
-        function nextStep() {
-            const steps = ['overview', 'demonstration', 'practice', 'quiz'];
-            const curIdx = steps.indexOf(currentLesson.step);
-            if(curIdx < steps.length - 1) {
-                currentLesson.progress += 25;
-                switchTab(steps[curIdx+1]);
-            } else {
-                completeLesson();
-            }
-        }
-
-        function previousStep() {
-            const steps = ['overview', 'demonstration', 'practice', 'quiz'];
-            const curIdx = steps.indexOf(currentLesson.step);
-            if(curIdx > 0) {
-                currentLesson.progress -= 25;
-                switchTab(steps[curIdx-1]);
-            }
-        }
-
-        function completeLesson() {
-            const level = levels.find(l => l.id === currentLesson.levelId);
-            level.progress = Math.min(100, level.progress + (100 / level.lessons.length));
-            if(level.progress >= 100 && currentLesson.levelId < levels.length) {
-                levels.find(l => l.id === currentLesson.levelId + 1).unlocked = true;
-            }
-            renderLevels();
-            closeModal();
-            alert("Lesson complete! You've gained 100 Noor points.");
-        }
-
-        function getExplanationHTML(exp) {
-            if(!exp) return '';
-            if(typeof exp === 'string') return `<p>${exp}</p>`;
-            let html = '';
-            if(exp.summary) html += `<p><strong>Note:</strong> ${exp.summary}</p>`;
-            if(exp.significance) html += `<p style="color:var(--accent-gold);"><em>${exp.significance}</em></p>`;
-            if(exp.components) {
-                html += exp.components.map(c => `
-                    <div class="component">
-                        <h4>${c.component}</h4>
-                        ${Array.isArray(c.description) ? 
-                            c.description.map(v => `
-                                <div class="verse-item">
-                                    <div class="verse-number">Verse ${v.verse}</div>
-                                    <div class="arabic-text" style="font-size:1.8rem;">${v.arabic}</div>
-                                    ${v.transliteration ? `<div class="transliteration">${v.transliteration}</div>` : ''}
-                                    <p>${v.translation}</p>
-                                </div>`).join('') : 
-                            `<p>${c.description}</p>`}
-                    </div>
-                `).join('');
-            }
-            if(exp.steps) {
-                html += '<div style="margin-top:15px;"><strong>Steps:</strong><ol style="margin-left:20px;">' + exp.steps.map(s => `<li><strong>${s.description}:</strong> ${s.details}</li>`).join('') + '</ol></div>';
-            }
-            if(exp.recommended_practices) {
-                html += '<div style="margin-top:15px;"><strong>Recommended:</strong><ul style="margin-left:20px;">' + exp.recommended_practices.map(r => `<li>${r}</li>`).join('') + '</ul></div>';
-            }
-            if(exp.spiritual_benefits) {
-                html += '<div style="margin-top:15px;"><strong>Spiritual Benefits:</strong><ul style="margin-left:20px;">' + exp.spiritual_benefits.map(b => `<li>${b}</li>`).join('') + '</ul></div>';
-            }
-            return html;
-        }
-
-    </script>
+    renderLevels();
+    updateStats();
+  </script>
 </body>
 </html>

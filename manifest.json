@@ -1,0 +1,10 @@
+{
+  "name": "SalahMaster — Interactive Prayer Learning",
+  "short_name": "SalahMaster",
+  "description": "Master Islamic prayer with interactive lessons, audio, and progress tracking",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fefce8",
+  "theme_color": "#065f46",
+  "icons": [{"src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>", "sizes": "any", "type": "image/svg+xml"}]
+}
