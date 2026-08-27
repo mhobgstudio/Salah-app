@@ -173,6 +173,9 @@
     .btn-audio:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(6,95,70,0.3); }
     .btn-audio.playing { background: var(--gold); }
 
+    .posture-svg { width: 80px; height: auto; opacity: 0.85; }
+    @media (max-width: 600px) { .posture-svg { width: 60px; } }
+
     .btn {
       padding: 12px 24px; border: none; border-radius: var(--radius-sm);
       font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600;
@@ -427,15 +430,19 @@
       } else if (currentTab === 'postures') {
         html += lesson.postures.map((p, i) => `
           <div class="posture-card">
-            <div class="posture-header">
-              <span class="posture-num">${i+1}</span>
-              <h3>${p.name}</h3>
-            </div>
-            ${p.arabic ? `<div class="arabic-recitation">${p.arabic}</div>` : ''}
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="flex-shrink:0;width:80px;">${getPostureSVG(p.image || lesson.image || 'qiyaam')}</div>
+              <div style="flex:1;">
+                <div class="posture-header">
+                  <span class="posture-num">${i+1}</span>
+                  <h3>${p.name}</h3>
+                </div>
             ${p.transliteration ? `<div class="transliteration">${p.transliteration}</div>` : ''}
             ${p.translation ? `<div class="translation">${p.translation}</div>` : ''}
             ${p.tip ? `<div class="tip-box"><h4>💡 Practice Tip</h4><p>${p.tip}</p></div>` : ''}
             <button class="btn-audio" onclick="reciteArabic('${p.arabic || p.translation || ''}')">🔊 Listen to Recitation</button>
+              </div>
+            </div>
           </div>
         `).join('');
       } else {
@@ -522,10 +529,38 @@
       updateStats();
     }
 
+    // SVG Prayer Position Illustrations
+    const postureSVGs = {
+      qiyaam: '<svg viewBox="0 0 120 160" class="posture-svg"><circle cx="60" cy="22" r="14" fill="var(--emerald)" opacity="0.8"/><line x1="60" y1="36" x2="60" y2="100" stroke="var(--emerald)" stroke-width="4" stroke-linecap="round"/><line x1="60" y1="55" x2="40" y2="80" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="55" x2="80" y2="80" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="100" x2="42" y2="145" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="100" x2="78" y2="145" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><rect x="25" y="145" width="70" height="6" rx="3" fill="var(--gold)" opacity="0.3"/></svg>',
+      ruku: '<svg viewBox="0 0 160 120" class="posture-svg"><circle cx="35" cy="25" r="12" fill="var(--emerald)" opacity="0.8"/><path d="M35 37 Q55 40 85 55" stroke="var(--emerald)" stroke-width="4" fill="none" stroke-linecap="round"/><line x1="85" y1="55" x2="85" y2="95" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="85" y1="55" x2="70" y2="85" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="85" y1="95" x2="70" y2="110" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="85" y1="95" x2="100" y2="110" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><rect x="55" y="110" width="55" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      sujud: '<svg viewBox="0 0 160 80" class="posture-svg"><circle cx="30" cy="30" r="10" fill="var(--emerald)" opacity="0.8"/><path d="M30 40 Q50 45 75 50" stroke="var(--emerald)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M75 50 Q90 55 95 60" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><line x1="95" y1="60" x2="80" y2="70" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="95" y1="60" x2="110" y2="70" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><rect x="15" y="70" width="110" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      jalsa: '<svg viewBox="0 0 120 100" class="posture-svg"><circle cx="60" cy="20" r="12" fill="var(--emerald)" opacity="0.8"/><line x1="60" y1="32" x2="60" y2="65" stroke="var(--emerald)" stroke-width="4" stroke-linecap="round"/><line x1="60" y1="48" x2="42" y2="60" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="48" x2="78" y2="60" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><path d="M60 65 Q55 80 40 85" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M60 65 Q65 75 80 65 Q85 60 90 65" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="30" y="88" width="70" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      takbir: '<svg viewBox="0 0 120 140" class="posture-svg"><circle cx="60" cy="20" r="12" fill="var(--emerald)" opacity="0.8"/><line x1="60" y1="32" x2="60" y2="95" stroke="var(--emerald)" stroke-width="4" stroke-linecap="round"/><line x1="60" y1="50" x2="38" y2="25" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="50" x2="82" y2="25" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="95" x2="42" y2="130" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="95" x2="78" y2="130" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><rect x="28" y="132" width="64" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      tashahhud: '<svg viewBox="0 0 120 100" class="posture-svg"><circle cx="55" cy="18" r="10" fill="var(--emerald)" opacity="0.8"/><path d="M55 28 Q55 50 55 55" stroke="var(--emerald)" stroke-width="4" fill="none" stroke-linecap="round"/><line x1="55" y1="42" x2="38" y2="55" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="55" y1="42" x2="72" y2="55" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><path d="M55 55 Q50 70 35 78" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M55 55 Q60 65 80 60 Q88 57 92 62" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="72" cy="55" r="2" fill="var(--emerald)"/><rect x="20" y="82" width="80" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      salaam: '<svg viewBox="0 0 120 120" class="posture-svg"><circle cx="60" cy="20" r="12" fill="var(--emerald)" opacity="0.8"/><line x1="60" y1="32" x2="60" y2="70" stroke="var(--emerald)" stroke-width="4" stroke-linecap="round"/><line x1="60" y1="48" x2="42" y2="60" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="48" x2="78" y2="60" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><path d="M60 70 Q55 85 40 90" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M60 70 Q65 80 80 70 Q88 64 92 70" stroke="var(--emerald)" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M30 15 Q25 12 28 18" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M90 15 Q95 12 92 18" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="25" y="95" width="70" height="5" rx="2.5" fill="var(--gold)" opacity="0.3"/></svg>',
+      'wudu-steps': '<svg viewBox="0 0 120 120" class="posture-svg"><circle cx="60" cy="18" r="12" fill="var(--emerald)" opacity="0.8"/><line x1="60" y1="30" x2="60" y2="80" stroke="var(--emerald)" stroke-width="4" stroke-linecap="round"/><line x1="60" y1="48" x2="40" y2="60" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="48" x2="80" y2="38" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><circle cx="88" cy="32" r="6" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.6"/><circle cx="85" cy="42" r="3" fill="#60a5fa" opacity="0.4"/><line x1="60" y1="80" x2="42" y2="108" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><line x1="60" y1="80" x2="78" y2="108" stroke="var(--emerald)" stroke-width="3" stroke-linecap="round"/><rect x="28" y="112" width="64" height="4" rx="2" fill="var(--gold)" opacity="0.3"/></svg>'
+    };
+
+    function getPostureSVG(image) {
+      return postureSVGs[image] || postureSVGs.qiyaam;
+    }
+
     function reciteArabic(text) {
-      if (!text || !('speechSynthesis' in window)) return;
+      if (!text || text === '—' || !('speechSynthesis' in window)) return;
+      speechSynthesis.cancel();
       const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'ar-SA'; u.rate = 0.8;
+      u.lang = 'ar-SA';
+      u.rate = 0.75;
+      u.pitch = 1.0;
+      // Try to find an Arabic voice
+      const voices = speechSynthesis.getVoices();
+      const arVoice = voices.find(v => v.lang.startsWith('ar'));
+      if (arVoice) u.voice = arVoice;
+      // Visual feedback
+      const btn = event && event.target && event.target.closest('.btn-audio');
+      if (btn) { btn.classList.add('playing'); btn.textContent = '🔊 Playing...'; }
+      u.onend = () => { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊 Listen to Recitation'; } };
+      u.onerror = () => { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊 Listen to Recitation'; } };
       speechSynthesis.speak(u);
     }
 
