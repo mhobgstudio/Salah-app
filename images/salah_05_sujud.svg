@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="15" y="145" width="250" height="25" rx="5" fill="url(#mat)" opacity="0.3"/>
+  <!-- Head on ground -->
+  <ellipse cx="55" cy="122" rx="18" ry="15" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <!-- Back curved down -->
+  <path d="M70 117 Q105 90 155 85 Q185 83 205 90" stroke="url(#thobe)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <!-- Arms (palms on ground) -->
+  <path d="M55 128 Q38 133 32 140" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M65 131 Q52 138 48 142" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Knees -->
+  <ellipse cx="200" cy="127" rx="10" ry="8" fill="#047857" opacity="0.7"/>
+  <!-- Feet (toes on ground) -->
+  <path d="M205 100 Q220 105 225 115 L230 120" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="233" cy="118" rx="8" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <text x="140" y="185" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">Sujud (Prostration)</text>
+
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 310">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Prayer mat -->
+  <rect x="20" y="245" width="160" height="40" rx="6" fill="url(#mat)" opacity="0.3"/>
+  <rect x="25" y="242" width="150" height="5" rx="2.5" fill="url(#mat)" opacity="0.5"/>
+  <!-- Head -->
+  <circle cx="100" cy="55" r="24" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="100" cy="42" rx="20" ry="9" fill="#065f46"/>
+  <!-- Kufi -->
+  <ellipse cx="100" cy="36" rx="16" ry="6" fill="#065f46" opacity="0.8"/>
+  <!-- Neck -->
+  <rect x="94" y="77" width="12" height="8" rx="3" fill="url(#thobe)"/>
+  <!-- Thobe body -->
+  <path d="M78 85 Q76 140 78 200 L122 200 Q124 140 122 85 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Thobe collar -->
+  <path d="M90 85 Q100 80 110 85" stroke="#d1d5db" stroke-width="1" fill="none"/>
+  <!-- Arms - hands together for niyyah -->
+  <path d="M80 100 Q60 115 58 135 Q57 145 65 150 Q72 153 78 148" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M120 100 Q140 115 142 135 Q143 145 135 150 Q128 153 122 148" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Hands visible -->
+  <circle cx="68" cy="148" r="6" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="132" cy="148" r="6" fill="#fbbf24" opacity="0.7"/>
+  <!-- Legs -->
+  <path d="M88 200 Q86 230 84 260 L94 260 Q96 230 98 200" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <path d="M102 200 Q104 230 106 260 L116 260 Q114 230 112 200" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Feet -->
+  <ellipse cx="89" cy="268" rx="10" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="111" cy="268" rx="10" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <!-- Label -->
+  <text x="100" y="296" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">1. Niyyah (Intention)</text>
+
+</svg>

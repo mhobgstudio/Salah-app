@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 290">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="30" y="240" width="180" height="30" rx="5" fill="url(#mat)" opacity="0.2"/>
+  <circle cx="120" cy="50" r="22" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="120" cy="38" rx="18" ry="8" fill="#065f46"/>
+  <ellipse cx="120" cy="33" rx="15" ry="5" fill="#065f46" opacity="0.8"/>
+  <rect x="114" y="70" width="12" height="8" rx="3" fill="url(#thobe)"/>
+  <path d="M102 78 Q100 130 102 190 L138 190 Q140 130 138 78 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Arms extended showing elbows -->
+  <path d="M102 95 Q70 105 60 130 Q55 145 65 155" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M138 95 Q170 105 180 130 Q185 145 175 155" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Elbow marks -->
+  <line x1="58" y1="118" x2="65" y2="155" stroke="url(#water)" stroke-width="2.5" opacity="0.5" stroke-dasharray="4,3"/>
+  <line x1="182" y1="118" x2="175" y2="155" stroke="url(#water)" stroke-width="2.5" opacity="0.5" stroke-dasharray="4,3"/>
+  <text x="55" y="170" text-anchor="middle" fill="#3b82f6" font-size="9" opacity="0.8">elbow</text>
+  <text x="185" y="170" text-anchor="middle" fill="#3b82f6" font-size="9" opacity="0.8">elbow</text>
+  <!-- Hands -->
+  <circle cx="65" cy="158" r="6" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="175" cy="158" r="6" fill="#fbbf24" opacity="0.7"/>
+  <!-- Legs -->
+  <path d="M110 190 Q108 215 106 238 L116 238 Q118 215 120 190" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <path d="M122 190 Q124 215 126 238 L136 238 Q134 215 132 190" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <ellipse cx="111" cy="245" rx="8" ry="4" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="131" cy="245" rx="8" ry="4" fill="#fbbf24" opacity="0.6"/>
+  <text x="120" y="275" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="13" font-weight="700">6. Wash Arms to Elbows (3×)</text>
+
+</svg>

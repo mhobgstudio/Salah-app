@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <circle cx="100" cy="40" r="20" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="100" cy="29" rx="16" ry="7" fill="#065f46"/>
+  <ellipse cx="100" cy="25" rx="13" ry="5" fill="#065f46" opacity="0.8"/>
+  <rect x="95" y="58" width="10" height="7" rx="2.5" fill="url(#thobe)"/>
+  <path d="M85 65 Q83 100 85 145 L115 145 Q117 100 115 65 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Arms reaching down -->
+  <path d="M85 80 Q68 90 62 110" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M115 80 Q132 90 138 110" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Legs reaching to feet -->
+  <path d="M90 145 Q87 170 82 195" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M110 145 Q113 170 118 195" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Feet with water -->
+  <ellipse cx="78" cy="203" rx="10" ry="6" fill="url(#water)" opacity="0.3"/>
+  <ellipse cx="122" cy="203" rx="10" ry="6" fill="url(#water)" opacity="0.3"/>
+  <ellipse cx="78" cy="200" rx="8" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="122" cy="200" rx="8" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <!-- Water drops on feet -->
+  <circle cx="75" cy="210" r="2" fill="url(#water)" opacity="0.5"/>
+  <circle cx="125" cy="210" r="2" fill="url(#water)" opacity="0.5"/>
+  <text x="100" y="240" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">9. Wash Feet to Ankles (3×)</text>
+
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 312">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="270" width="160" height="30" rx="5" fill="url(#mat)" opacity="0.3"/>
+  <circle cx="100" cy="45" r="24" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="100" cy="32" rx="20" ry="9" fill="#065f46"/>
+  <ellipse cx="100" cy="27" rx="16" ry="5" fill="#065f46" opacity="0.8"/>
+  <rect x="94" y="67" width="12" height="8" rx="3" fill="url(#thobe)"/>
+  <path d="M78 75 Q76 135 78 195 L122 195 Q124 135 122 75 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Arms raised to ear level -->
+  <path d="M80 90 Q55 65 48 40" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M120 90 Q145 65 152 40" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Hands at ears -->
+  <circle cx="46" cy="36" r="6" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="154" cy="36" r="6" fill="#fbbf24" opacity="0.7"/>
+  <!-- Legs -->
+  <path d="M88 195 Q86 230 84 258 L94 258 Q96 230 98 195" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <path d="M102 195 Q104 230 106 258 L116 258 Q114 230 112 195" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <ellipse cx="89" cy="265" rx="9" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="111" cy="265" rx="9" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <text x="100" y="298" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">Takbir al-Ihram</text>
+
+</svg>

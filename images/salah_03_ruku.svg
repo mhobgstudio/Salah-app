@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 255">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="205" width="220" height="28" rx="5" fill="url(#mat)" opacity="0.3"/>
+  <!-- Head -->
+  <circle cx="55" cy="65" r="20" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="55" cy="54" rx="16" ry="7" fill="#065f46"/>
+  <ellipse cx="55" cy="50" rx="13" ry="5" fill="#065f46" opacity="0.8"/>
+  <!-- Back (flat, horizontal) -->
+  <path d="M73 77 Q110 73 185 77 L185 91 Q110 87 73 91 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Arms reaching to knees -->
+  <path d="M175 83 Q190 95 190 125" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M185 83 Q200 95 200 125" stroke="url(#thobe)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Hands on knees -->
+  <circle cx="192" cy="133" r="6" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="202" cy="133" r="6" fill="#fbbf24" opacity="0.7"/>
+  <!-- Legs (straight) -->
+  <path d="M175 91 L173 195 L183 195 L185 91" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <path d="M187 91 L185 195 L195 195 L197 91" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <ellipse cx="178" cy="202" rx="8" ry="4" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="192" cy="202" rx="8" ry="4" fill="#fbbf24" opacity="0.6"/>
+  <text x="130" y="240" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">Ruku (Bowing)</text>
+
+</svg>

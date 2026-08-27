@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 282">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="230" width="160" height="28" rx="5" fill="url(#mat)" opacity="0.3"/>
+  <circle cx="100" cy="45" r="24" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="100" cy="32" rx="20" ry="9" fill="#065f46"/>
+  <ellipse cx="100" cy="27" rx="16" ry="5" fill="#065f46" opacity="0.8"/>
+  <rect x="94" y="67" width="12" height="8" rx="3" fill="url(#thobe)"/>
+  <path d="M82 75 Q80 130 85 180 L115 180 Q120 130 118 75 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Right hand on right knee, index finger pointing -->
+  <path d="M118 110 Q135 130 140 155" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Index finger pointing up -->
+  <line x1="142" y1="153" x2="148" y2="135" stroke="#047857" stroke-width="4" stroke-linecap="round"/>
+  <!-- Golden dot above finger -->
+  <circle cx="150" cy="130" r="3" fill="#d4af37" opacity="0.6"/>
+  <!-- Left hand on left thigh -->
+  <path d="M82 110 Q65 130 60 155" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Legs -->
+  <path d="M85 180 Q70 195 48 200 Q38 202 32 198" stroke="url(#thobe)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M115 180 Q120 195 125 208 L128 218" stroke="url(#thobe)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="130" cy="222" rx="6" ry="9" fill="#fbbf24" opacity="0.6"/>
+  <text x="100" y="268" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">Tashahhud</text>
+
+</svg>

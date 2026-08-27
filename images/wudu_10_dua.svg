@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="thobe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8960c"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="245" width="160" height="35" rx="5" fill="url(#mat)" opacity="0.3"/>
+  <rect x="25" y="242" width="150" height="5" rx="2.5" fill="url(#mat)" opacity="0.5"/>
+  <circle cx="100" cy="55" r="24" fill="url(#thobe)" stroke="#d1d5db" stroke-width="1"/>
+  <ellipse cx="100" cy="42" rx="20" ry="9" fill="#065f46"/>
+  <ellipse cx="100" cy="36" rx="16" ry="6" fill="#065f46" opacity="0.8"/>
+  <rect x="94" y="77" width="12" height="8" rx="3" fill="url(#thobe)"/>
+  <path d="M78 85 Q76 140 78 195 L122 195 Q124 140 122 85 Z" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <!-- Hands raised in dua -->
+  <path d="M80 100 Q55 80 48 55 Q45 45 52 38" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M120 100 Q145 80 152 55 Q155 45 148 38" stroke="url(#thobe)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Palms up -->
+  <ellipse cx="50" cy="35" rx="7" ry="5" fill="#fbbf24" opacity="0.7" transform="rotate(-15 50 35)"/>
+  <ellipse cx="150" cy="35" rx="7" ry="5" fill="#fbbf24" opacity="0.7" transform="rotate(15 150 35)"/>
+  <!-- Light/dots above hands -->
+  <circle cx="50" cy="25" r="2" fill="#d4af37" opacity="0.5"/>
+  <circle cx="150" cy="25" r="2" fill="#d4af37" opacity="0.5"/>
+  <circle cx="100" cy="20" r="2.5" fill="#d4af37" opacity="0.4"/>
+  <!-- Legs -->
+  <path d="M88 195 Q86 225 84 245 L94 245 Q96 225 98 195" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <path d="M102 195 Q104 225 106 245 L116 245 Q114 225 112 195" fill="url(#thobe)" stroke="#d1d5db" stroke-width="0.5"/>
+  <ellipse cx="89" cy="252" rx="9" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <ellipse cx="111" cy="252" rx="9" ry="5" fill="#fbbf24" opacity="0.6"/>
+  <text x="100" y="285" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="700">10. Dua After Wudu</text>
+
+</svg>
