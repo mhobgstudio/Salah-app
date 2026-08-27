@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <!-- Water basin -->
+  <ellipse cx="100" cy="240" rx="50" ry="15" fill="#60a5fa" opacity="0.3"/>
+  <path d="M50 230 Q50 260 100 265 Q150 260 150 230" fill="#60a5fa" opacity="0.2"/>
+  <!-- Head -->
+  <circle cx="100" cy="52" r="22" fill="url(#bodyGrad)"/>
+  <ellipse cx="100" cy="40" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <!-- Torso -->
+  <path d="M80 72 Q78 130 80 190 L120 190 Q122 130 120 72 Z" fill="url(#bodyGrad)"/>
+  <!-- Arms extended forward (washing) -->
+  <path d="M80 95 Q55 105 45 130" stroke="url(#bodyGrad)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M120 95 Q145 105 155 130" stroke="url(#bodyGrad)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Water drops -->
+  <circle cx="48" cy="140" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="52" cy="148" r="2" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="152" cy="140" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="148" cy="148" r="2" fill="#60a5fa" opacity="0.4"/>
+  <!-- Legs -->
+  <path d="M88 190 Q85 220 82 250 L92 250 Q94 220 97 190" fill="url(#bodyGrad)"/>
+  <path d="M103 190 Q106 220 108 250 L118 250 Q116 220 113 190" fill="url(#bodyGrad)"/>
+  <ellipse cx="87" cy="258" rx="8" ry="5" fill="#047857"/>
+  <ellipse cx="113" cy="258" rx="8" ry="5" fill="#047857"/>
+  <text x="100" y="290" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="600">Wudu (Ablution)</text>
+</svg>

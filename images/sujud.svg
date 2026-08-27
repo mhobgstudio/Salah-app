@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="140" width="240" height="25" rx="4" fill="#d4af37" opacity="0.25"/>
+  <!-- Head on ground (forehead+ nose) -->
+  <ellipse cx="55" cy="120" rx="18" ry="14" fill="url(#bodyGrad)"/>
+  <!-- Back curved down -->
+  <path d="M70 115 Q100 90 150 85 Q180 83 200 90" stroke="url(#bodyGrad)" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <!-- Arms (palms on ground) -->
+  <path d="M55 125 Q40 130 35 138" stroke="url(#bodyGrad)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M65 128 Q55 135 50 138" stroke="url(#bodyGrad)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Knees on ground -->
+  <ellipse cx="195" cy="125" rx="10" ry="8" fill="#047857"/>
+  <!-- Feet (toes on ground) -->
+  <path d="M200 100 Q215 105 220 115 L225 120" stroke="url(#bodyGrad)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="228" cy="118" rx="8" ry="5" fill="#047857"/>
+  <text x="140" y="172" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="600">Sujud (Prostration)</text>
+</svg>

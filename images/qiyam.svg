@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <!-- Prayer mat -->
+  <rect x="30" y="280" width="140" height="30" rx="4" fill="#d4af37" opacity="0.25"/>
+  <rect x="35" y="278" width="130" height="4" rx="2" fill="#d4af37" opacity="0.4"/>
+  <!-- Head -->
+  <circle cx="100" cy="42" r="22" fill="url(#bodyGrad)"/>
+  <!-- Kufi/cap -->
+  <ellipse cx="100" cy="30" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <!-- Neck -->
+  <rect x="93" y="62" width="14" height="12" rx="4" fill="url(#bodyGrad)"/>
+  <!-- Torso (thobe) -->
+  <path d="M75 74 Q73 120 75 180 L125 180 Q127 120 125 74 Z" fill="url(#bodyGrad)"/>
+  <!-- Arms folded over chest -->
+  <path d="M75 90 Q60 100 65 120 Q70 130 85 125" stroke="url(#bodyGrad)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M125 90 Q140 100 135 120 Q130 130 115 125" stroke="url(#bodyGrad)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Left leg -->
+  <path d="M85 180 Q82 220 80 260 L90 260 Q92 220 95 180" fill="url(#bodyGrad)"/>
+  <!-- Right leg -->
+  <path d="M105 180 Q108 220 110 260 L120 260 Q118 220 115 180" fill="url(#bodyGrad)"/>
+  <!-- Feet -->
+  <ellipse cx="85" cy="270" rx="10" ry="6" fill="#047857"/>
+  <ellipse cx="115" cy="270" rx="10" ry="6" fill="#047857"/>
+  <!-- Label -->
+  <text x="100" y="310" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="600">Qiyam</text>
+</svg>

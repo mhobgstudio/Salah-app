@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect x="25" y="230" width="150" height="25" rx="4" fill="#d4af37" opacity="0.25"/>
+  <!-- Head turned slightly right -->
+  <circle cx="105" cy="42" r="22" fill="url(#bodyGrad)"/>
+  <ellipse cx="105" cy="30" rx="18" ry="8" fill="#065f46" opacity="0.7"/>
+  <!-- Face turned indicator -->
+  <path d="M115 38 Q120 42 118 48" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M82 62 Q80 120 85 170 L115 170 Q120 120 118 62 Z" fill="url(#bodyGrad)"/>
+  <path d="M82 110 Q65 125 60 150" stroke="url(#bodyGrad)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M118 110 Q135 125 140 150" stroke="url(#bodyGrad)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M85 170 Q70 185 50 190 Q40 192 35 188" stroke="url(#bodyGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M115 170 Q120 185 125 195 L128 205" stroke="url(#bodyGrad)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <ellipse cx="130" cy="208" rx="6" ry="8" fill="#047857"/>
+  <!-- Right turn arrows -->
+  <path d="M130 35 Q140 30 145 38" stroke="#d4af37" stroke-width="2" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="100" y="268" text-anchor="middle" fill="#065f46" font-family="Inter,sans-serif" font-size="14" font-weight="600">Salaam (Right)</text>
+</svg>

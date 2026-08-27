@@ -1,6 +1,6 @@
 const CACHE_VERSION = 'v2';
 const CACHE_NAME = `${('salah-guide')}-${CACHE_VERSION}`;
-const ASSETS = ['/', '/index.html', '/offline.html', '/manifest.json'];
+const ASSETS = ['/', '/index.html', '/offline.html', '/manifest.json', '/levels.js', '/audio/manifest.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));

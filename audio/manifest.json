@@ -1,0 +1,146 @@
+{
+  "takbir": {
+    "arabic": "ٱللَّٰهُ أَكْبَرُ",
+    "english": "Allahu Akbar",
+    "ar_audio": "audio/takbir_ar.mp3",
+    "en_audio": "audio/takbir_en.mp3"
+  },
+  "bismillah": {
+    "arabic": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english": "Bismillahir Rahmanir Raheem",
+    "ar_audio": "audio/bismillah_ar.mp3",
+    "en_audio": "audio/bismillah_en.mp3"
+  },
+  "alhamd": {
+    "arabic": "ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَٰلَمِينَ",
+    "english": "Alhamdu lillahi Rabbil Alameen",
+    "ar_audio": "audio/alhamd_ar.mp3",
+    "en_audio": "audio/alhamd_en.mp3"
+  },
+  "ar-rahman": {
+    "arabic": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    "english": "Ar-Rahmanir Raheem",
+    "ar_audio": "audio/ar-rahman_ar.mp3",
+    "en_audio": "audio/ar-rahman_en.mp3"
+  },
+  "malik": {
+    "arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+    "english": "Maliki yawmid Deen",
+    "ar_audio": "audio/malik_ar.mp3",
+    "en_audio": "audio/malik_en.mp3"
+  },
+  "iyyak": {
+    "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+    "english": "Iyyaka nabudu wa iyyaka nastaeen",
+    "ar_audio": "audio/iyyak_ar.mp3",
+    "en_audio": "audio/iyyak_en.mp3"
+  },
+  "ihdina": {
+    "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+    "english": "Ihdinas-siraatal-mustaqeem",
+    "ar_audio": "audio/ihdina_ar.mp3",
+    "en_audio": "audio/ihdina_en.mp3"
+  },
+  "sirat": {
+    "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+    "english": "Siraatal-ladheena an'amta alayhim",
+    "ar_audio": "audio/sirat_ar.mp3",
+    "en_audio": "audio/sirat_en.mp3"
+  },
+  "subhana_rabbil_azim": {
+    "arabic": "سُبْحَانَ رَبِّيَ ٱلْعَظِيمِ",
+    "english": "Subhana Rabbiyal Adheem",
+    "ar_audio": "audio/subhana_rabbil_azim_ar.mp3",
+    "en_audio": "audio/subhana_rabbil_azim_en.mp3"
+  },
+  "sami_allah": {
+    "arabic": "سَمِعَ ٱللَّٰهُ لِمَنْ حَمِدَهُ ۚ رَبَّنَا وَلَكَ ٱلْحَمْدُ",
+    "english": "Sami Allahu liman hamidah, Rabbana walakal hamd",
+    "ar_audio": "audio/sami_allah_ar.mp3",
+    "en_audio": "audio/sami_allah_en.mp3"
+  },
+  "subhana_rabbil_aala": {
+    "arabic": "سُبْحَانَ رَبِّيَ ٱلْأَعْلَىٰ",
+    "english": "Subhana Rabbiyal Aala",
+    "ar_audio": "audio/subhana_rabbil_aala_ar.mp3",
+    "en_audio": "audio/subhana_rabbil_aala_en.mp3"
+  },
+  "rabbighfir": {
+    "arabic": "رَبِّ ٱغْفِرْ لِي، رَبِّ ٱغْفِرْ لِي",
+    "english": "Rabbighfir lee, Rabbighfir lee",
+    "ar_audio": "audio/rabbighfir_ar.mp3",
+    "en_audio": "audio/rabbighfir_en.mp3"
+  },
+  "qul_huwa_allah": {
+    "arabic": "قُلْ هُوَ ٱللَّٰهُ أَحَدٌ",
+    "english": "Qul huwa Allahu Ahad",
+    "ar_audio": "audio/qul_huwa_allah_ar.mp3",
+    "en_audio": "audio/qul_huwa_allah_en.mp3"
+  },
+  "allahus_samad": {
+    "arabic": "ٱللَّٰهُ ٱلصَّمَدُ",
+    "english": "Allahus Samad",
+    "ar_audio": "audio/allahus_samad_ar.mp3",
+    "en_audio": "audio/allahus_samad_en.mp3"
+  },
+  "lam yalid": {
+    "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+    "english": "Lam yalid wa lam yoolad",
+    "ar_audio": "audio/lam yalid_ar.mp3",
+    "en_audio": "audio/lam yalid_en.mp3"
+  },
+  "wam_lam_yakun": {
+    "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ",
+    "english": "Wa lam yakun lahu kufuwan ahad",
+    "ar_audio": "audio/wam_lam_yakun_ar.mp3",
+    "en_audio": "audio/wam_lam_yakun_en.mp3"
+  },
+  "salawat": {
+    "arabic": "ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+    "english": "Allahumma salli ala Muhammad...",
+    "ar_audio": "audio/salawat_ar.mp3",
+    "en_audio": "audio/salawat_en.mp3"
+  },
+  "salam": {
+    "arabic": "ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ",
+    "english": "Assalamu alaikum wa rahmatullah",
+    "ar_audio": "audio/salam_ar.mp3",
+    "en_audio": "audio/salam_en.mp3"
+  },
+  "tashahhud": {
+    "arabic": "ٱلتَّحِيَّاتُ لِلَّٰهِ وَٱلصَّلَوَاتُ وَٱلطَّيِّبَاتُ، ٱلسَّلَامُ عَلَيْكَ أَيُّهَا ٱلنَّبِيُّ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ، ٱلسَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ ٱللَّٰهِ ٱلصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+    "english": "At-tahiyyatu lillahi...",
+    "ar_audio": "audio/tashahhud_ar.mp3",
+    "en_audio": "audio/tashahhud_en.mp3"
+  },
+  "qul_audhu_falaq": {
+    "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+    "english": "Qul a'udhu bi rabbil-falaq",
+    "ar_audio": "audio/qul_audhu_falaq_ar.mp3",
+    "en_audio": "audio/qul_audhu_falaq_en.mp3"
+  },
+  "min_sharri": {
+    "arabic": "مِن شَرِّ مَا خَلَقَ",
+    "english": "Min sharri ma khalaq",
+    "ar_audio": "audio/min_sharri_ar.mp3",
+    "en_audio": "audio/min_sharri_en.mp3"
+  },
+  "qul_audhu_nas": {
+    "arabic": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+    "english": "Qul a'udhu bi rabbinnas",
+    "ar_audio": "audio/qul_audhu_nas_ar.mp3",
+    "en_audio": "audio/qul_audhu_nas_en.mp3"
+  },
+  "wa_duha": {
+    "arabic": "وَٱلضُّحَىٰ",
+    "english": "Wad duha",
+    "ar_audio": "audio/wa_duha_ar.mp3",
+    "en_audio": "audio/wa_duha_en.mp3"
+  },
+  "wal_layl": {
+    "arabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+    "english": "Wal layli iza saja",
+    "ar_audio": "audio/wal_layl_ar.mp3",
+    "en_audio": "audio/wal_layl_en.mp3"
+  }
+}
